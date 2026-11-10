@@ -1,0 +1,32 @@
+# A-Share Institutional Quantitative Research Platform Dependencies
+# Target Python Version: 3.12 (>= 3.10, <= 3.12 recommended for scientific wheels)
+
+# Core Execution & Backtest Engine
+nautilus_trader==1.231.0
+duckdb>=1.5.0
+pyarrow>=20.0.0
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.15.0
+
+# Convex Portfolio Optimization (CVXPY)
+cvxpy>=1.9.0
+clarabel>=0.11.0
+osqp>=1.1.0
+qdldl>=0.1.9
+
+# Market Data Lake & Factor Evaluation
+tushare>=1.4.20
+alphalens-cn>=0.4.8
+statsmodels>=0.15.0
+
+# Microservice & Gateway Infrastructure
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.10.0
+httpx>=0.27.0
+requests>=2.31.0
+pyyaml>=6.0.0
+
+# Testing & Verification
+pytest>=8.0.0

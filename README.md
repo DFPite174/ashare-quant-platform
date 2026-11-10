@@ -92,28 +92,40 @@
 
 为了让第三方审计人员、量化专家快速、确定性地复现全部验证结果，平台提供标准化校验命令：
 
-### 1. 环境准备
-```bash
-# 推荐 Python 3.12 虚拟环境
-python --version  # 需 >= 3.12.0
+### 1. 环境准备与依赖安装
+> [!IMPORTANT]
+> 机构级底层科学计算与回测库（NautilusTrader 1.231.0、CVXPY 1.9.3、DuckDB 1.5.5）强烈推荐运行于 **Python 3.12** 环境（支持 3.10 ~ 3.12）。
+> 若您的系统存在多个 Python 版本（如 Windows 默认注册了 3.14 预览版），请在 Windows 终端使用 `py -3.12` 执行器，或激活 Python 3.12 虚拟环境：
 
-# 安装核心依赖
-pip install -r requirements.txt (或直接使用 pyproject.toml)
+```bash
+# Windows PowerShell (多版本环境推荐)
+py -3.12 -m pip install -r requirements.txt
+
+# Linux / macOS / 独立虚拟环境
+python3 -m pip install -r requirements.txt
 ```
 
 ### 2. 执行全量 20 项自动化单元测试 (100% 验收)
 ```bash
-python -m pytest tests/ -v
+# Windows
+py -3.12 -m pytest tests/ -v
+
+# Linux / macOS
+pytest tests/ -v
 ```
 **实测结果基准**：
 - `test_invariant_core.py`: 7/7 PASS (T+1、一字板、停牌、佣金保底、印花税减半、ADV20、黄金账本)
 - `test_backend_api.py`: 6/6 PASS (FastAPI 网关与 Nautilus 适配器)
 - `test_cvxpy_optimizer.py`: 3/3 PASS (CVXPY 行业中性与换手率 L1 压缩)
 - `test_meta_reflector_and_quantbot.py`: 4/4 PASS (季度元反思与 QuantBot 消息格式)
-- **耗时**: 约 2.5 ~ 3.5 秒。
+- **耗时**: 约 2.0 ~ 3.0 秒 (20 passed)。
 
 ### 3. 执行智能体确定性工具链烟雾测试
 ```bash
+# Windows
+py -3.12 scripts/test_quant_tools.py
+
+# Linux / macOS
 python scripts/test_quant_tools.py
 ```
 **预期输出**：
@@ -128,6 +140,10 @@ ALL 5 QUANT TOOLS SMOKE TEST PASSED SUCCESSFULLY!
 
 ### 4. 一键启动后端 API 网关
 ```bash
+# Windows
+py -3.12 scripts/run_server.py --port 8000
+
+# Linux / macOS
 python scripts/run_server.py --port 8000
 ```
 - Swagger API 在线交互文档：`http://127.0.0.1:8000/docs`
