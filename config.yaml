@@ -1,0 +1,176 @@
+# =====================================================================
+# DeerFlow 2.0 生产级配置：机构级 A 股量化投研平台
+# =====================================================================
+config_version: 64
+
+# ----------------------------------------------------------------------
+# 模型接入
+# ----------------------------------------------------------------------
+models:
+  - name: deepseek-chat
+    display_name: DeepSeek V3 / Local LLM
+    use: deerflow.models.patched_deepseek:PatchedChatDeepSeek
+    model: deepseek-chat
+    api_base: https://api.deepseek.com/v1
+    api_key: $DEEPSEEK_API_KEY
+    context_window: 131072
+    timeout: 600.0
+    max_retries: 3
+    supports_thinking: false
+    supports_vision: false
+    supports_reasoning_effort: false
+
+# ----------------------------------------------------------------------
+# 工具组声明
+# ----------------------------------------------------------------------
+tool_groups:
+  - name: data
+  - name: factor
+  - name: strategy
+  - name: risk
+  - name: backtest
+  - name: file:read
+  - name: file:write
+
+# ----------------------------------------------------------------------
+# 确定性工具装载 (100% 真实 Tushare 付费数据，零合成数据)
+# ----------------------------------------------------------------------
+tools:
+  - name: tushare_snapshot_query
+    group: data
+    use: src.agents.quant_tools:tushare_snapshot_query
+
+  - name: factor_evaluate
+    group: factor
+    use: src.agents.quant_tools:factor_evaluate
+
+  - name: strategy_optimize
+    group: strategy
+    use: src.agents.quant_tools:strategy_optimize
+
+  - name: risk_project
+    group: risk
+    use: src.agents.quant_tools:risk_project
+
+  - name: backtest_replay
+    group: backtest
+    use: src.agents.quant_tools:backtest_replay
+
+# ----------------------------------------------------------------------
+# 子代理运行时：并发配额与队列调度
+# ----------------------------------------------------------------------
+subagent_runtime:
+  max_running: 4
+  max_queued: 64
+  admission_policy: queue
+  queue_timeout_seconds: 300
+
+# ----------------------------------------------------------------------
+# 量化专业子代理团队声明
+# ----------------------------------------------------------------------
+subagents:
+  max_total_per_run: 12
+
+  custom_agents:
+    # ── 数据工程专员 ──
+    data-engineer:
+      description: 负责 Tushare Pro 官方付费数据湖治理、PIT 财报对齐与未复权行情导出，绝不上网搜假数据。
+      system_prompt: |
+        你是一名严谨的量化数据工程师。
+        你的职责是调用 tushare_snapshot_query 检查已锁定的 4b139947 数据快照。
+        严格确保成交量乘以 100 转换，停牌标的必须核验交易所公告。
+      tools:
+        - tushare_snapshot_query
+      skills:
+        - tushare-snapshot-spec
+      model: inherit
+      max_turns: 8
+      timeout_seconds: 300
+
+    # ── 因子挖掘专员 ──
+    factor-analyst:
+      description: 负责 Alphalens-cn 0.4.8 因子有效性实证、Newey-West HAC 稳健统计与单调性分析。
+      system_prompt: |
+        你是一名机构级量化因子研究员。
+        你的职责是调用 factor_evaluate 运行因子实证。
+        若 IC 为负或未达标，严禁篡改结论，如实汇报 FACTOR_NOT_ADMITTED 状态。
+      tools:
+        - factor_evaluate
+      skills:
+        - alphalens-cn-evaluation-spec
+      model: inherit
+      max_turns: 10
+      timeout_seconds: 600
+
+    # ── 策略优化专员 ──
+    strategy-quant:
+      description: 负责基于获准因子构建 Top-N 投资组合，调用 HRP 或均值-方差优化器导出目标权重。
+      system_prompt: |
+        你是一名量化策略与组合管理专员。
+        调用 strategy_optimize 生成 T 日信号草案。
+        严格遵循换手率约束与分散化要求。
+      tools:
+        - strategy_optimize
+      skills:
+        - research-workflow-spec
+      model: inherit
+      max_turns: 8
+      timeout_seconds: 300
+
+    # ── 机构风控专员 ──
+    risk-controller:
+      description: 负责投研端可交易性守门、一字板拦截、停牌锁仓延期及 ADV20 容量过滤。
+      system_prompt: |
+        你是一名苛刻的机构风控官。
+        调用 risk_project 裁决订单。
+        遇到停牌股票绝不强制清仓，必须锁仓并计入 deferred_delta。
+        单日调仓额不得超过 5% ADV20。
+      tools:
+        - risk_project
+      skills:
+        - tradability-capacity-spec
+      model: inherit
+      max_turns: 10
+      timeout_seconds: 400
+
+    # ── 高保真回测专员 ──
+    backtest-engine:
+      description: 负责 NautilusTrader 1.231.0 纯观察 Bar 执行与 GoldenLedger 黄金账本核算。
+      system_prompt: |
+        你是一名高频与微观结构回测专家。
+        调用 backtest_replay 运行回测。
+        坚决关闭 synthetic_book，严格执行 T+1 撮合与法定税费。
+        对账差额必须恒等于 0。
+      tools:
+        - backtest_replay
+      skills:
+        - golden-ledger-reconciliation
+      model: inherit
+      max_turns: 8
+      timeout_seconds: 500
+
+# ----------------------------------------------------------------------
+# 技能按需发现与长期进化记忆
+# ----------------------------------------------------------------------
+skills:
+  path: skills
+  deferred_discovery: true
+
+memory:
+  enabled: true
+  mode: tool
+  manager_class: deermem
+  injection_enabled: true
+
+llm_call:
+  retry_max_attempts: 3
+  retry_base_delay_ms: 1000
+  retry_cap_delay_ms: 8000
+  max_concurrent_calls: 4
+
+circuit_breaker:
+  failure_threshold: 5
+  recovery_timeout_sec: 60
+
+tool_output:
+  enabled: true

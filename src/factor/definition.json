@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source": {
+    "name": "P2 development replication",
+    "url": "local",
+    "license": "internal"
+  },
+  "factors": [
+    {
+      "id": "momentum20",
+      "version": "1",
+      "name": "20-session momentum",
+      "kind": "expression",
+      "expression": "adjusted_close / shift(adjusted_close, 20) - 1",
+      "hypothesis": "Higher trailing 20-session adjusted close returns predict higher cross-sectional forward returns.",
+      "parameters": {},
+      "lookback": 20,
+      "required_fields": [
+        "adjusted_close"
+      ],
+      "direction": "positive",
+      "frequency": "daily",
+      "asset_classes": [
+        "stock"
+      ],
+      "markets": [
+        "cn_a"
+      ]
+    }
+  ]
+}

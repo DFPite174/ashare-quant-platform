@@ -1,0 +1,5666 @@
+[
+  {
+    "case": "weekly-2023-02-10",
+    "assessment_date": "2023-02-13",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688327.SH": 0.1,
+      "002576.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "600477.SH": 0.1,
+      "002645.SZ": 0.1,
+      "688373.SH": 0.1,
+      "300846.SZ": 0.1,
+      "301380.SZ": 0.1,
+      "688292.SH": 0.1,
+      "600536.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 107749.43575000006,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 113047.13816000002,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-02-17",
+    "assessment_date": "2023-02-20",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688327.SH": 0.1,
+      "688292.SH": 0.1,
+      "600532.SH": 0.1,
+      "300846.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "600462.SH": 0.1,
+      "601728.SH": 0.1,
+      "688162.SH": 0.1,
+      "002734.SZ": 0.1,
+      "605337.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 202904.47072999997,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 303099.1302999999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-02-24",
+    "assessment_date": "2023-02-27",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688327.SH": 0.1,
+      "688292.SH": 0.1,
+      "600532.SH": 0.1,
+      "300835.SZ": 0.1,
+      "300846.SZ": 0.1,
+      "605337.SH": 0.1,
+      "300742.SZ": 0.1,
+      "300448.SZ": 0.1,
+      "600197.SH": 0.1,
+      "600766.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 107789.32560000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 131912.1142900001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-03-03",
+    "assessment_date": "2023-03-06",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688292.SH": 0.1,
+      "300570.SZ": 0.1,
+      "601059.SH": 0.1,
+      "601728.SH": 0.1,
+      "600462.SH": 0.1,
+      "688389.SH": 0.1,
+      "002918.SZ": 0.1,
+      "300495.SZ": 0.1,
+      "601949.SH": 0.1,
+      "603816.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205858.09139999986,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 221140.18823000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-03-10",
+    "assessment_date": "2023-03-13",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688292.SH": 0.1,
+      "601728.SH": 0.1,
+      "300561.SZ": 0.1,
+      "688389.SH": 0.1,
+      "300570.SZ": 0.1,
+      "603003.SH": 0.1,
+      "300273.SZ": 0.1,
+      "000996.SZ": 0.1,
+      "600853.SH": 0.1,
+      "600462.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 203719.0945399999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 208163.43443999998,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-03-17",
+    "assessment_date": "2023-03-20",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600853.SH": 0.1,
+      "688292.SH": 0.1,
+      "601728.SH": 0.1,
+      "300225.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "300273.SZ": 0.1,
+      "688389.SH": 0.1,
+      "600060.SH": 0.1,
+      "600685.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 104075.79578,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 130410.27395000009,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-03-24",
+    "assessment_date": "2023-03-27",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300570.SZ": 0.1,
+      "688292.SH": 0.1,
+      "300273.SZ": 0.1,
+      "688327.SH": 0.1,
+      "300249.SZ": 0.1,
+      "300846.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "688206.SH": 0.1,
+      "601728.SH": 0.1,
+      "600853.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 202243.48040000006,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 214958.09230999992,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-03-31",
+    "assessment_date": "2023-04-03",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688327.SH": 0.1,
+      "301380.SZ": 0.1,
+      "000936.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "300799.SZ": 0.1,
+      "600060.SH": 0.1,
+      "300846.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "603603.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 210371.19999999998,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 312259.9820000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-04-07",
+    "assessment_date": "2023-04-10",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688327.SH": 0.1,
+      "300846.SZ": 0.1,
+      "300223.SZ": 0.1,
+      "300799.SZ": 0.1,
+      "688300.SH": 0.1,
+      "300570.SZ": 0.1,
+      "000936.SZ": 0.1,
+      "688400.SH": 0.1,
+      "688206.SH": 0.1,
+      "301380.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 116047.68571000002,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 158981.05619,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-04-14",
+    "assessment_date": "2023-04-17",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688327.SH": 0.1,
+      "300846.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "300799.SZ": 0.1,
+      "002095.SZ": 0.1,
+      "688300.SH": 0.1,
+      "688400.SH": 0.1,
+      "600446.SH": 0.1,
+      "688432.SH": 0.1,
+      "000936.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 102878.30448000011,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 138239.13999000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-04-21",
+    "assessment_date": "2023-04-24",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "601949.SH": 0.1,
+      "300799.SZ": 0.1,
+      "300846.SZ": 0.1,
+      "600060.SH": 0.1,
+      "688010.SH": 0.1,
+      "600446.SH": 0.1,
+      "000936.SZ": 0.1,
+      "688327.SH": 0.1,
+      "300570.SZ": 0.1,
+      "688300.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 108010.9470000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 224741.3758199999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-04-28",
+    "assessment_date": "2023-05-04",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "601949.SH": 0.1,
+      "600446.SH": 0.1,
+      "600853.SH": 0.1,
+      "688292.SH": 0.1,
+      "002478.SZ": 0.1,
+      "603153.SH": 0.1,
+      "600060.SH": 0.1,
+      "688373.SH": 0.1,
+      "300570.SZ": 0.1,
+      "603519.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50005.00399999993,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 174535.40499999997,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-05-05",
+    "assessment_date": "2023-05-08",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "601949.SH": 0.1,
+      "300799.SZ": 0.1,
+      "600853.SH": 0.1,
+      "688292.SH": 0.1,
+      "600060.SH": 0.1,
+      "002478.SZ": 0.1,
+      "603153.SH": 0.1,
+      "002563.SZ": 0.1,
+      "600446.SH": 0.1,
+      "600085.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 106505.94350000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 215027.0712200001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-05-12",
+    "assessment_date": "2023-05-15",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "601949.SH": 0.1,
+      "300799.SZ": 0.1,
+      "002478.SZ": 0.1,
+      "600060.SH": 0.1,
+      "605158.SH": 0.1,
+      "002563.SZ": 0.1,
+      "300266.SZ": 0.1,
+      "605011.SH": 0.1,
+      "002973.SZ": 0.1,
+      "300756.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 102518.45999999992,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 213643.46899999995,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-05-19",
+    "assessment_date": "2023-05-22",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "601949.SH": 0.1,
+      "605011.SH": 0.1,
+      "300799.SZ": 0.1,
+      "600685.SH": 0.1,
+      "300225.SZ": 0.1,
+      "002478.SZ": 0.1,
+      "002527.SZ": 0.1,
+      "002953.SZ": 0.1,
+      "600664.SH": 0.1,
+      "300670.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 103239.18000000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 217312.13400000014,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-05-26",
+    "assessment_date": "2023-05-29",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "605011.SH": 0.1,
+      "002527.SZ": 0.1,
+      "601949.SH": 0.1,
+      "300822.SZ": 0.1,
+      "300756.SZ": 0.1,
+      "300670.SZ": 0.1,
+      "601061.SH": 0.1,
+      "600664.SH": 0.1,
+      "300799.SZ": 0.1,
+      "300141.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 106216.15399999995,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 113162.093,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-06-02",
+    "assessment_date": "2023-06-05",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "605011.SH": 0.1,
+      "300570.SZ": 0.1,
+      "301366.SZ": 0.1,
+      "300799.SZ": 0.1,
+      "300670.SZ": 0.1,
+      "000503.SZ": 0.1,
+      "688343.SH": 0.1,
+      "688307.SH": 0.1,
+      "300846.SZ": 0.1,
+      "002937.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 210841.75008000003,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 315389.56846,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-06-09",
+    "assessment_date": "2023-06-12",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "605011.SH": 0.1,
+      "301366.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "605277.SH": 0.1,
+      "688343.SH": 0.1,
+      "300846.SZ": 0.1,
+      "603003.SH": 0.1,
+      "301159.SZ": 0.1,
+      "600536.SH": 0.1,
+      "300670.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 212041.8740000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 214265.0950000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-06-16",
+    "assessment_date": "2023-06-19",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300570.SZ": 0.1,
+      "000936.SZ": 0.1,
+      "301366.SZ": 0.1,
+      "605011.SH": 0.1,
+      "300846.SZ": 0.1,
+      "600766.SH": 0.1,
+      "605277.SH": 0.1,
+      "002527.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "603596.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 113866.79700000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 221903.72100000002,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-06-21",
+    "assessment_date": "2023-06-26",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300570.SZ": 0.1,
+      "000936.SZ": 0.1,
+      "002527.SZ": 0.1,
+      "301366.SZ": 0.1,
+      "605277.SH": 0.1,
+      "301399.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "600509.SH": 0.1,
+      "300846.SZ": 0.1,
+      "603596.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50335.334,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 176277.14500000014,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-06-30",
+    "assessment_date": "2023-07-03",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000936.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "002527.SZ": 0.1,
+      "603617.SH": 0.1,
+      "688550.SH": 0.1,
+      "002576.SZ": 0.1,
+      "603786.SH": 0.1,
+      "605277.SH": 0.1,
+      "002502.SZ": 0.1,
+      "300495.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 206092.9260000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 233491.89760000014,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-07-07",
+    "assessment_date": "2023-07-10",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000936.SZ": 0.1,
+      "002527.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "603596.SH": 0.1,
+      "603786.SH": 0.1,
+      "000996.SZ": 0.1,
+      "603617.SH": 0.1,
+      "002576.SZ": 0.1,
+      "688550.SH": 0.1,
+      "300799.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 211958.3855999998,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 320099.0332200001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-07-14",
+    "assessment_date": "2023-07-17",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002527.SZ": 0.1,
+      "000996.SZ": 0.1,
+      "300457.SZ": 0.1,
+      "688550.SH": 0.1,
+      "603786.SH": 0.1,
+      "000936.SZ": 0.1,
+      "000046.SZ": 0.1,
+      "002876.SZ": 0.1,
+      "002576.SZ": 0.1,
+      "688300.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 212499.94662000012,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 212624.34089000008,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-07-21",
+    "assessment_date": "2023-07-24",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300457.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "002502.SZ": 0.1,
+      "000046.SZ": 0.1,
+      "603056.SH": 0.1,
+      "300495.SZ": 0.1,
+      "603786.SH": 0.1,
+      "600234.SH": 0.1,
+      "002973.SZ": 0.1,
+      "603360.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 304722.452,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 307149.8769999999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-07-28",
+    "assessment_date": "2023-07-31",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300457.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "000046.SZ": 0.1,
+      "002918.SZ": 0.1,
+      "601555.SH": 0.1,
+      "603786.SH": 0.1,
+      "600234.SH": 0.1,
+      "300225.SZ": 0.1,
+      "603816.SH": 0.1,
+      "601059.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 110735.66900000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 211407.23499999996,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-08-04",
+    "assessment_date": "2023-08-07",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300457.SZ": 0.1,
+      "601059.SH": 0.1,
+      "002377.SZ": 0.1,
+      "000046.SZ": 0.1,
+      "002918.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "601555.SH": 0.1,
+      "000627.SZ": 0.1,
+      "600234.SH": 0.1,
+      "600446.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 103577.51800000007,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 129939.85399999998,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-08-11",
+    "assessment_date": "2023-08-14",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "601059.SH": 0.1,
+      "600766.SH": 0.1,
+      "601555.SH": 0.1,
+      "002502.SZ": 0.1,
+      "002918.SZ": 0.1,
+      "300495.SZ": 0.1,
+      "301246.SZ": 0.1,
+      "000728.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 402226.85400000005,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 407352.97499999986,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-08-18",
+    "assessment_date": "2023-08-21",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1,
+      "601059.SH": 0.1,
+      "301380.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "600766.SH": 0.1,
+      "301210.SZ": 0.1,
+      "300742.SZ": 0.1,
+      "600365.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 504468.989,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 525809.3080000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-08-25",
+    "assessment_date": "2023-08-28",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "301159.SZ": 0.1,
+      "301380.SZ": 0.1,
+      "601059.SH": 0.1,
+      "300561.SZ": 0.1,
+      "000046.SZ": 0.1,
+      "002527.SZ": 0.1,
+      "301408.SZ": 0.1,
+      "300457.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "600462.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 311105.8289999999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 334519.2190000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-09-01",
+    "assessment_date": "2023-09-04",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "301159.SZ": 0.1,
+      "000046.SZ": 0.1,
+      "301380.SZ": 0.1,
+      "688292.SH": 0.1,
+      "688366.SH": 0.1,
+      "301408.SZ": 0.1,
+      "002095.SZ": 0.1,
+      "603519.SH": 0.1,
+      "300742.SZ": 0.1,
+      "002527.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 206535.5682000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 217317.36923,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-09-08",
+    "assessment_date": "2023-09-11",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1,
+      "688366.SH": 0.1,
+      "301095.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "688311.SH": 0.1,
+      "688292.SH": 0.1,
+      "688135.SH": 0.1,
+      "301380.SZ": 0.1,
+      "688206.SH": 0.1,
+      "688260.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 107712.00835999995,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 129025.95101000008,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-09-15",
+    "assessment_date": "2023-09-18",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1,
+      "300300.SZ": 0.1,
+      "301095.SZ": 0.1,
+      "688135.SH": 0.1,
+      "688292.SH": 0.1,
+      "688366.SH": 0.1,
+      "688206.SH": 0.1,
+      "600985.SH": 0.1,
+      "601728.SH": 0.1,
+      "002095.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 105888.53671000012,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 129009.65472999994,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-09-22",
+    "assessment_date": "2023-09-25",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1,
+      "600365.SH": 0.1,
+      "000996.SZ": 0.1,
+      "001282.SZ": 0.1,
+      "688135.SH": 0.1,
+      "301095.SZ": 0.1,
+      "301348.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "688536.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 408689.39008,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 511660.21303999994,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-09-28",
+    "assessment_date": "2023-10-09",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1,
+      "600365.SH": 0.1,
+      "300570.SZ": 0.1,
+      "000996.SZ": 0.1,
+      "600985.SH": 0.1,
+      "001282.SZ": 0.1,
+      "002664.SZ": 0.1,
+      "605277.SH": 0.1,
+      "600583.SH": 0.1,
+      "300300.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 305846.57500000007,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 413235.852,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-10-13",
+    "assessment_date": "2023-10-16",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600365.SH": 0.1,
+      "000996.SZ": 0.1,
+      "688260.SH": 0.1,
+      "001282.SZ": 0.1,
+      "002664.SZ": 0.1,
+      "603110.SH": 0.1,
+      "002363.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "002241.SZ": 0.1,
+      "603358.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 302959.8561600001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 309074.4846800001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-10-20",
+    "assessment_date": "2023-10-23",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688260.SH": 0.1,
+      "300225.SZ": 0.1,
+      "001282.SZ": 0.1,
+      "002664.SZ": 0.1,
+      "000996.SZ": 0.1,
+      "002953.SZ": 0.1,
+      "002363.SZ": 0.1,
+      "603110.SH": 0.1,
+      "300495.SZ": 0.1,
+      "603003.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 206014.4475999999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 409363.98400000005,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-10-27",
+    "assessment_date": "2023-10-30",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688260.SH": 0.1,
+      "603110.SH": 0.1,
+      "688311.SH": 0.1,
+      "002363.SZ": 0.1,
+      "603003.SH": 0.1,
+      "002953.SZ": 0.1,
+      "002664.SZ": 0.1,
+      "301095.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "600006.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50048.09705000006,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 250226.6155999999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-11-03",
+    "assessment_date": "2023-11-06",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688260.SH": 0.1,
+      "603003.SH": 0.1,
+      "688311.SH": 0.1,
+      "002664.SZ": 0.1,
+      "603110.SH": 0.1,
+      "603358.SH": 0.1,
+      "002363.SZ": 0.1,
+      "600006.SH": 0.1,
+      "601633.SH": 0.1,
+      "300225.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 201852.85516000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 402437.31425000005,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-11-10",
+    "assessment_date": "2023-11-13",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688260.SH": 0.1,
+      "603003.SH": 0.1,
+      "301348.SZ": 0.1,
+      "300846.SZ": 0.1,
+      "603992.SH": 0.1,
+      "603883.SH": 0.1,
+      "688311.SH": 0.1,
+      "601059.SH": 0.1,
+      "002664.SZ": 0.1,
+      "603603.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 108332.73847000003,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 118590.96644999992,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-11-17",
+    "assessment_date": "2023-11-20",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688300.SH": 0.1,
+      "688260.SH": 0.1,
+      "688327.SH": 0.1,
+      "000503.SZ": 0.1,
+      "300846.SZ": 0.1,
+      "688010.SH": 0.1,
+      "688311.SH": 0.1,
+      "603992.SH": 0.1,
+      "603003.SH": 0.1,
+      "603883.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 102683.40478000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 110029.58361999993,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-11-24",
+    "assessment_date": "2023-11-27",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600766.SH": 0.1,
+      "000503.SZ": 0.1,
+      "603992.SH": 0.1,
+      "688327.SH": 0.1,
+      "688010.SH": 0.1,
+      "603617.SH": 0.1,
+      "603883.SH": 0.1,
+      "688260.SH": 0.1,
+      "300846.SZ": 0.1,
+      "688307.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 202890.92719999986,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 217386.49829000002,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-12-01",
+    "assessment_date": "2023-12-04",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600766.SH": 0.1,
+      "000503.SZ": 0.1,
+      "688327.SH": 0.1,
+      "688300.SH": 0.1,
+      "688010.SH": 0.1,
+      "688102.SH": 0.1,
+      "300482.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "002937.SZ": 0.1,
+      "603358.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 105270.18898,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 111662.32473000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-12-08",
+    "assessment_date": "2023-12-11",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600766.SH": 0.1,
+      "300742.SZ": 0.1,
+      "688327.SH": 0.1,
+      "301159.SZ": 0.1,
+      "000503.SZ": 0.1,
+      "002100.SZ": 0.1,
+      "603358.SH": 0.1,
+      "688300.SH": 0.1,
+      "300482.SZ": 0.1,
+      "300570.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 208064.79589999985,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 214343.11794999999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-12-15",
+    "assessment_date": "2023-12-18",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "603153.SH": 0.1,
+      "600647.SH": 0.1,
+      "605011.SH": 0.1,
+      "002100.SZ": 0.1,
+      "600234.SH": 0.1,
+      "300482.SZ": 0.1,
+      "603358.SH": 0.1,
+      "600985.SH": 0.1,
+      "300742.SZ": 0.1,
+      "603992.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 208531.36200000002,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 318807.5230000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-12-22",
+    "assessment_date": "2023-12-25",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "603153.SH": 0.1,
+      "600234.SH": 0.1,
+      "688032.SH": 0.1,
+      "002937.SZ": 0.1,
+      "605011.SH": 0.1,
+      "600766.SH": 0.1,
+      "000546.SZ": 0.1,
+      "301327.SZ": 0.1,
+      "600985.SH": 0.1,
+      "002100.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 108082.8187999999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 113587.71820000008,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2023-12-29",
+    "assessment_date": "2024-01-02",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300742.SZ": 0.1,
+      "600647.SH": 0.1,
+      "603153.SH": 0.1,
+      "002442.SZ": 0.1,
+      "688032.SH": 0.1,
+      "603003.SH": 0.1,
+      "688290.SH": 0.1,
+      "002241.SZ": 0.1,
+      "002100.SZ": 0.1,
+      "000546.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 202487.71439000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 219292.0519400001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-01-05",
+    "assessment_date": "2024-01-08",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300742.SZ": 0.1,
+      "688032.SH": 0.1,
+      "688290.SH": 0.1,
+      "605011.SH": 0.1,
+      "002241.SZ": 0.1,
+      "600462.SH": 0.1,
+      "603273.SH": 0.1,
+      "600985.SH": 0.1,
+      "603883.SH": 0.1,
+      "600685.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205615.84939999995,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 226333.0959500001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-01-12",
+    "assessment_date": "2024-01-15",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002641.SZ": 0.1,
+      "688032.SH": 0.1,
+      "300742.SZ": 0.1,
+      "603273.SH": 0.1,
+      "301327.SZ": 0.1,
+      "000546.SZ": 0.1,
+      "688290.SH": 0.1,
+      "600462.SH": 0.1,
+      "605158.SH": 0.1,
+      "002442.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 203776.09148000006,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 215644.66820000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-01-19",
+    "assessment_date": "2024-01-22",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600462.SH": 0.1,
+      "300742.SZ": 0.1,
+      "688290.SH": 0.1,
+      "002641.SZ": 0.1,
+      "003013.SZ": 0.1,
+      "688032.SH": 0.1,
+      "001308.SZ": 0.1,
+      "603883.SH": 0.1,
+      "601818.SH": 0.1,
+      "002543.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205580.39398000005,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 242682.43895999997,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-01-26",
+    "assessment_date": "2024-01-29",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600647.SH": 0.1,
+      "600462.SH": 0.1,
+      "003013.SZ": 0.1,
+      "601818.SH": 0.1,
+      "600985.SH": 0.1,
+      "002641.SZ": 0.1,
+      "601728.SH": 0.1,
+      "600060.SH": 0.1,
+      "000936.SZ": 0.1,
+      "002816.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 304790.51999999996,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 319195.91100000014,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-02-02",
+    "assessment_date": "2024-02-05",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600446.SH": 0.1,
+      "601728.SH": 0.1,
+      "601696.SH": 0.1,
+      "601061.SH": 0.1,
+      "601818.SH": 0.1,
+      "001308.SZ": 0.1,
+      "600060.SH": 0.1,
+      "600741.SH": 0.1,
+      "600647.SH": 0.1,
+      "603816.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 107891.82799999996,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 138507.41300000012,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-02-08",
+    "assessment_date": "2024-02-19",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600060.SH": 0.1,
+      "600446.SH": 0.1,
+      "601728.SH": 0.1,
+      "603816.SH": 0.1,
+      "601818.SH": 0.1,
+      "600985.SH": 0.1,
+      "688366.SH": 0.1,
+      "601118.SH": 0.1,
+      "601061.SH": 0.1,
+      "601696.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50050.04900000008,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 56135.07795000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-02-23",
+    "assessment_date": "2024-02-26",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600446.SH": 0.1,
+      "601061.SH": 0.1,
+      "300223.SZ": 0.1,
+      "600060.SH": 0.1,
+      "600985.SH": 0.1,
+      "601728.SH": 0.1,
+      "601696.SH": 0.1,
+      "300570.SZ": 0.1,
+      "601818.SH": 0.1,
+      "600894.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50250.24899999995,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 65620.60400000005,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-03-01",
+    "assessment_date": "2024-03-04",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300223.SZ": 0.1,
+      "603273.SH": 0.1,
+      "600446.SH": 0.1,
+      "600536.SH": 0.1,
+      "600060.SH": 0.1,
+      "600894.SH": 0.1,
+      "688400.SH": 0.1,
+      "603786.SH": 0.1,
+      "300570.SZ": 0.1,
+      "688327.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50019.07806000014,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 161277.00985000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-03-08",
+    "assessment_date": "2024-03-11",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "603273.SH": 0.1,
+      "688300.SH": 0.1,
+      "301399.SZ": 0.1,
+      "300223.SZ": 0.1,
+      "300570.SZ": 0.1,
+      "002923.SZ": 0.1,
+      "300249.SZ": 0.1,
+      "300846.SZ": 0.1,
+      "600006.SH": 0.1,
+      "600894.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50015.01399999996,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 65019.97397000019,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-03-15",
+    "assessment_date": "2024-03-18",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688260.SH": 0.1,
+      "603273.SH": 0.1,
+      "301399.SZ": 0.1,
+      "300249.SZ": 0.1,
+      "300670.SZ": 0.1,
+      "300013.SZ": 0.1,
+      "300157.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "603360.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50013.13211999999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 50012.05103999997,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-03-22",
+    "assessment_date": "2024-03-25",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "605277.SH": 0.1,
+      "688260.SH": 0.1,
+      "603273.SH": 0.1,
+      "600006.SH": 0.1,
+      "002377.SZ": 0.1,
+      "603360.SH": 0.1,
+      "002645.SZ": 0.1,
+      "688522.SH": 0.1,
+      "600990.SH": 0.1,
+      "688373.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50042.191150000086,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 107640.3017200001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-03-29",
+    "assessment_date": "2024-04-01",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688522.SH": 0.1,
+      "688260.SH": 0.1,
+      "603360.SH": 0.1,
+      "002645.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "600006.SH": 0.1,
+      "603003.SH": 0.1,
+      "605277.SH": 0.1,
+      "600990.SH": 0.1,
+      "688373.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50008.71770999991,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 60662.37071999987,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-04-03",
+    "assessment_date": "2024-04-08",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002645.SZ": 0.1,
+      "603360.SH": 0.1,
+      "002377.SZ": 0.1,
+      "688522.SH": 0.1,
+      "600549.SH": 0.1,
+      "688260.SH": 0.1,
+      "300073.SZ": 0.1,
+      "002170.SZ": 0.1,
+      "301366.SZ": 0.1,
+      "688373.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50024.72370000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 76326.39910000004,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-04-12",
+    "assessment_date": "2024-04-15",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002645.SZ": 0.1,
+      "300073.SZ": 0.1,
+      "600894.SH": 0.1,
+      "600549.SH": 0.1,
+      "605011.SH": 0.1,
+      "603358.SH": 0.1,
+      "002377.SZ": 0.1,
+      "600746.SH": 0.1,
+      "600647.SH": 0.1,
+      "002816.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 209012.843,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 245355.14900000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-04-19",
+    "assessment_date": "2024-04-22",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300073.SZ": 0.1,
+      "600894.SH": 0.1,
+      "688522.SH": 0.1,
+      "600985.SH": 0.1,
+      "002543.SZ": 0.1,
+      "603358.SH": 0.1,
+      "600060.SH": 0.1,
+      "002563.SZ": 0.1,
+      "000869.SZ": 0.1,
+      "603883.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50057.95690000005,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 69155.5354000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-04-26",
+    "assessment_date": "2024-04-29",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "003029.SZ": 0.1,
+      "688201.SH": 0.1,
+      "002296.SZ": 0.1,
+      "300073.SZ": 0.1,
+      "600894.SH": 0.1,
+      "603358.SH": 0.1,
+      "688522.SH": 0.1,
+      "001301.SZ": 0.1,
+      "688300.SH": 0.1,
+      "300570.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50056.355300000054,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 148410.00570000004,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-04-30",
+    "assessment_date": "2024-05-06",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "003029.SZ": 0.1,
+      "603358.SH": 0.1,
+      "002296.SZ": 0.1,
+      "688201.SH": 0.1,
+      "001301.SZ": 0.1,
+      "600894.SH": 0.1,
+      "002563.SZ": 0.1,
+      "603786.SH": 0.1,
+      "600060.SH": 0.1,
+      "600985.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50016.54553000016,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 50348.036689999986,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-05-10",
+    "assessment_date": "2024-05-13",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "003029.SZ": 0.1,
+      "603358.SH": 0.1,
+      "002296.SZ": 0.1,
+      "600990.SH": 0.1,
+      "600894.SH": 0.1,
+      "603786.SH": 0.1,
+      "600060.SH": 0.1,
+      "688522.SH": 0.1,
+      "301309.SZ": 0.1,
+      "001301.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50061.290229999846,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 70325.25394999995,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-05-17",
+    "assessment_date": "2024-05-20",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600990.SH": 0.1,
+      "002296.SZ": 0.1,
+      "001301.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "003029.SZ": 0.1,
+      "300448.SZ": 0.1,
+      "688307.SH": 0.1,
+      "301366.SZ": 0.1,
+      "002918.SZ": 0.1,
+      "688300.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50006.00499999991,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 60349.53820000007,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-05-24",
+    "assessment_date": "2024-05-27",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "001301.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "002100.SZ": 0.1,
+      "605277.SH": 0.1,
+      "301327.SZ": 0.1,
+      "002918.SZ": 0.1,
+      "605011.SH": 0.1,
+      "688360.SH": 0.1,
+      "688689.SH": 0.1,
+      "301399.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50005.104099999895,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 119801.36563999993,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-05-31",
+    "assessment_date": "2024-06-03",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300670.SZ": 0.1,
+      "688102.SH": 0.1,
+      "600894.SH": 0.1,
+      "603787.SH": 0.1,
+      "301348.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "603360.SH": 0.1,
+      "002100.SZ": 0.1,
+      "301366.SZ": 0.1,
+      "688689.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 102007.11415999997,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 220250.67460000011,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-06-07",
+    "assessment_date": "2024-06-11",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300822.SZ": 0.1,
+      "301348.SZ": 0.1,
+      "601118.SH": 0.1,
+      "603360.SH": 0.1,
+      "688361.SH": 0.1,
+      "688343.SH": 0.1,
+      "688300.SH": 0.1,
+      "600685.SH": 0.1,
+      "002241.SZ": 0.1,
+      "688536.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 207973.98517999993,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 219272.8927999999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-06-14",
+    "assessment_date": "2024-06-17",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300822.SZ": 0.1,
+      "688536.SH": 0.1,
+      "688343.SH": 0.1,
+      "688361.SH": 0.1,
+      "300670.SZ": 0.1,
+      "603360.SH": 0.1,
+      "301348.SZ": 0.1,
+      "688206.SH": 0.1,
+      "688432.SH": 0.1,
+      "688689.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 300567.5262199999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 304772.14664,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-06-21",
+    "assessment_date": "2024-06-24",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300822.SZ": 0.1,
+      "688536.SH": 0.1,
+      "688206.SH": 0.1,
+      "688689.SH": 0.1,
+      "002241.SZ": 0.1,
+      "300457.SZ": 0.1,
+      "601033.SH": 0.1,
+      "688361.SH": 0.1,
+      "688300.SH": 0.1,
+      "603596.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 204241.0559800001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 232802.03843000002,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-06-28",
+    "assessment_date": "2024-07-01",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300822.SZ": 0.1,
+      "300835.SZ": 0.1,
+      "002241.SZ": 0.1,
+      "002937.SZ": 0.1,
+      "603003.SH": 0.1,
+      "002179.SZ": 0.1,
+      "300457.SZ": 0.1,
+      "603596.SH": 0.1,
+      "301366.SZ": 0.1,
+      "601033.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205687.526,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 212736.56800000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-07-05",
+    "assessment_date": "2024-07-08",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "603003.SH": 0.1,
+      "300448.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "301159.SZ": 0.1,
+      "300266.SZ": 0.1,
+      "688522.SH": 0.1,
+      "600462.SH": 0.1,
+      "300141.SZ": 0.1,
+      "603617.SH": 0.1,
+      "300013.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 301984.88716999994,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 326511.72951000003,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-07-12",
+    "assessment_date": "2024-07-15",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "603003.SH": 0.1,
+      "600462.SH": 0.1,
+      "002241.SZ": 0.1,
+      "603596.SH": 0.1,
+      "603617.SH": 0.1,
+      "300561.SZ": 0.1,
+      "300448.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "300141.SZ": 0.1,
+      "688522.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205192.4264000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 224435.53028000018,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-07-19",
+    "assessment_date": "2024-07-22",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002241.SZ": 0.1,
+      "600664.SH": 0.1,
+      "603003.SH": 0.1,
+      "603596.SH": 0.1,
+      "603301.SH": 0.1,
+      "601728.SH": 0.1,
+      "601818.SH": 0.1,
+      "688032.SH": 0.1,
+      "300141.SZ": 0.1,
+      "600234.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 203917.69294000004,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 208103.73479999986,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-07-26",
+    "assessment_date": "2024-07-29",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300300.SZ": 0.1,
+      "600234.SH": 0.1,
+      "600664.SH": 0.1,
+      "301327.SZ": 0.1,
+      "688032.SH": 0.1,
+      "301159.SZ": 0.1,
+      "600006.SH": 0.1,
+      "002241.SZ": 0.1,
+      "601615.SH": 0.1,
+      "301380.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 208700.33079999994,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 220070.24935999996,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-08-02",
+    "assessment_date": "2024-08-05",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600234.SH": 0.1,
+      "600664.SH": 0.1,
+      "688032.SH": 0.1,
+      "301327.SZ": 0.1,
+      "002576.SZ": 0.1,
+      "600006.SH": 0.1,
+      "000008.SZ": 0.1,
+      "003029.SZ": 0.1,
+      "300300.SZ": 0.1,
+      "600990.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205506.13979999992,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 233012.8189999999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-08-09",
+    "assessment_date": "2024-08-12",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002072.SZ": 0.1,
+      "600696.SH": 0.1,
+      "600234.SH": 0.1,
+      "300300.SZ": 0.1,
+      "300013.SZ": 0.1,
+      "688032.SH": 0.1,
+      "688311.SH": 0.1,
+      "000008.SZ": 0.1,
+      "003029.SZ": 0.1,
+      "300030.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 301373.36626,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 319247.0220599999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-08-16",
+    "assessment_date": "2024-08-19",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "600696.SH": 0.1,
+      "002072.SZ": 0.1,
+      "300157.SZ": 0.1,
+      "300013.SZ": 0.1,
+      "300448.SZ": 0.1,
+      "300266.SZ": 0.1,
+      "600234.SH": 0.1,
+      "300030.SZ": 0.1,
+      "301399.SZ": 0.1,
+      "301327.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 205501.33499999985,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 228467.27799999982,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-08-23",
+    "assessment_date": "2024-08-26",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002072.SZ": 0.1,
+      "300448.SZ": 0.1,
+      "688360.SH": 0.1,
+      "300013.SZ": 0.1,
+      "600234.SH": 0.1,
+      "600696.SH": 0.1,
+      "000546.SZ": 0.1,
+      "300157.SZ": 0.1,
+      "002170.SZ": 0.1,
+      "301366.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 201454.7724800001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 207416.72848000008,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-08-30",
+    "assessment_date": "2024-09-02",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "002072.SZ": 0.1,
+      "300013.SZ": 0.1,
+      "688360.SH": 0.1,
+      "600696.SH": 0.1,
+      "300448.SZ": 0.1,
+      "002170.SZ": 0.1,
+      "600462.SH": 0.1,
+      "300157.SZ": 0.1,
+      "688400.SH": 0.1,
+      "688013.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 200829.72805999994,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 219245.58551999994,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-09-06",
+    "assessment_date": "2024-09-09",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000627.SZ": 0.1,
+      "603883.SH": 0.1,
+      "600462.SH": 0.1,
+      "002468.SZ": 0.1,
+      "300013.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "002480.SZ": 0.1,
+      "688400.SH": 0.1,
+      "603360.SH": 0.1,
+      "300073.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 203822.65799999994,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 408187.7689600001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-09-13",
+    "assessment_date": "2024-09-18",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000627.SZ": 0.1,
+      "300030.SZ": 0.1,
+      "002480.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "002468.SZ": 0.1,
+      "000546.SZ": 0.1,
+      "600365.SH": 0.1,
+      "600536.SH": 0.1,
+      "002072.SZ": 0.1,
+      "300561.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 101642.58500000018,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 125117.03600000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-09-20",
+    "assessment_date": "2024-09-23",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "000627.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "300030.SZ": 0.1,
+      "002480.SZ": 0.1,
+      "600536.SH": 0.1,
+      "002468.SZ": 0.1,
+      "300225.SZ": 0.1,
+      "000546.SZ": 0.1,
+      "600741.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50471.46999999996,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 80768.73700000001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-09-27",
+    "assessment_date": "2024-09-30",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300561.SZ": 0.1,
+      "000627.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "600446.SH": 0.1,
+      "300030.SZ": 0.1,
+      "600060.SH": 0.1,
+      "603596.SH": 0.1,
+      "600536.SH": 0.1,
+      "601696.SH": 0.1,
+      "000728.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 51659.65699999999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 901424.528,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-09-30",
+    "assessment_date": "2024-10-08",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300561.SZ": 0.1,
+      "000627.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "300030.SZ": 0.1,
+      "300266.SZ": 0.1,
+      "600446.SH": 0.1,
+      "600060.SH": 0.1,
+      "688327.SH": 0.1,
+      "601696.SH": 0.1,
+      "603596.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50003.202200000094,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 803865.071,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-10-11",
+    "assessment_date": "2024-10-14",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300561.SZ": 0.1,
+      "002816.SZ": 0.1,
+      "300030.SZ": 0.1,
+      "688201.SH": 0.1,
+      "300266.SZ": 0.1,
+      "002563.SZ": 0.1,
+      "300300.SZ": 0.1,
+      "688536.SH": 0.1,
+      "000503.SZ": 0.1,
+      "300223.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 102170.53241999989,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 217931.37261999998,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-10-18",
+    "assessment_date": "2024-10-21",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300561.SZ": 0.1,
+      "000503.SZ": 0.1,
+      "600990.SH": 0.1,
+      "002816.SZ": 0.1,
+      "688201.SH": 0.1,
+      "688536.SH": 0.1,
+      "300223.SZ": 0.1,
+      "688327.SH": 0.1,
+      "300266.SZ": 0.1,
+      "603110.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 108638.7341599998,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 210019.75890999998,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-10-25",
+    "assessment_date": "2024-10-28",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300570.SZ": 0.1,
+      "600696.SH": 0.1,
+      "000503.SZ": 0.1,
+      "688311.SH": 0.1,
+      "300457.SZ": 0.1,
+      "300266.SZ": 0.1,
+      "301366.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "688536.SH": 0.1,
+      "600990.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50071.820750000086,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 157258.24509999994,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-11-01",
+    "assessment_date": "2024-11-04",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300570.SZ": 0.1,
+      "688010.SH": 0.1,
+      "600696.SH": 0.1,
+      "600653.SH": 0.1,
+      "688615.SH": 0.1,
+      "000503.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "688292.SH": 0.1,
+      "300266.SZ": 0.1,
+      "300835.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50201.400199999945,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 80009.65867999995,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-11-08",
+    "assessment_date": "2024-11-11",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300570.SZ": 0.1,
+      "688010.SH": 0.1,
+      "600653.SH": 0.1,
+      "300266.SZ": 0.1,
+      "600696.SH": 0.1,
+      "300561.SZ": 0.1,
+      "600536.SH": 0.1,
+      "301095.SZ": 0.1,
+      "002377.SZ": 0.1,
+      "001301.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50022.78175999991,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 135355.26400000005,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-11-15",
+    "assessment_date": "2024-11-18",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688010.SH": 0.1,
+      "300570.SZ": 0.1,
+      "600234.SH": 0.1,
+      "600653.SH": 0.1,
+      "688275.SH": 0.1,
+      "300266.SZ": 0.1,
+      "600696.SH": 0.1,
+      "300013.SZ": 0.1,
+      "300300.SZ": 0.1,
+      "600536.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 305121.57072000013,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 336660.12776999996,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-11-22",
+    "assessment_date": "2024-11-25",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "688010.SH": 0.1,
+      "300561.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "002095.SZ": 0.1,
+      "688361.SH": 0.1,
+      "688275.SH": 0.1,
+      "002816.SZ": 0.1,
+      "600536.SH": 0.1,
+      "601949.SH": 0.1,
+      "600234.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 105173.61249999997,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 318903.3887700001,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-11-29",
+    "assessment_date": "2024-12-02",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300822.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "002095.SZ": 0.1,
+      "688275.SH": 0.1,
+      "002816.SZ": 0.1,
+      "600628.SH": 0.1,
+      "688361.SH": 0.1,
+      "603110.SH": 0.1,
+      "688343.SH": 0.1,
+      "002527.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50044.31327000002,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 174588.56810999988,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-12-06",
+    "assessment_date": "2024-12-09",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300822.SZ": 0.1,
+      "300561.SZ": 0.1,
+      "002095.SZ": 0.1,
+      "600234.SH": 0.1,
+      "000008.SZ": 0.1,
+      "600628.SH": 0.1,
+      "002527.SZ": 0.1,
+      "603110.SH": 0.1,
+      "688275.SH": 0.1,
+      "002296.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 107850.3866000001,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 121698.0504299999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-12-13",
+    "assessment_date": "2024-12-16",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300561.SZ": 0.1,
+      "300822.SZ": 0.1,
+      "002095.SZ": 0.1,
+      "600628.SH": 0.1,
+      "002953.SZ": 0.1,
+      "605337.SH": 0.1,
+      "002527.SZ": 0.1,
+      "605388.SH": 0.1,
+      "688290.SH": 0.1,
+      "300249.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50017.416400000075,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 187402.29904,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-12-20",
+    "assessment_date": "2024-12-23",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "300561.SZ": 0.1,
+      "688343.SH": 0.1,
+      "002953.SZ": 0.1,
+      "600234.SH": 0.1,
+      "688300.SH": 0.1,
+      "688162.SH": 0.1,
+      "300448.SZ": 0.1,
+      "600628.SH": 0.1,
+      "001308.SZ": 0.1,
+      "605158.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 103955.78588999996,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 158492.8084299999,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "weekly-2024-12-27",
+    "assessment_date": "2024-12-30",
+    "input_cash": 1000000.0,
+    "input_positions": {},
+    "input_weights": {
+      "605158.SH": 0.1,
+      "000936.SZ": 0.1,
+      "002918.SZ": 0.1,
+      "000008.SZ": 0.1,
+      "688290.SH": 0.1,
+      "688343.SH": 0.1,
+      "300249.SZ": 0.1,
+      "688162.SH": 0.1,
+      "000627.SZ": 0.1,
+      "002576.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000.0,
+      "equity": 1000000.0,
+      "cash": 1000000.0,
+      "unreserved_cash_after_requests": 50043.57252999989,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000.0,
+    "equity": 1000000.0,
+    "cash": 1000000.0,
+    "unreserved_cash_after_requests": 52463.26981000004,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "suspension-reopen-2023-05-23",
+    "assessment_date": "2023-05-23",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        1000,
+        1000
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 23940.0,
+      "equity": 23940.0,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": false,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 23940.0,
+    "equity": 23940.0,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [
+        "600446.SH"
+      ],
+      "industry_over": [
+        "801750.SI"
+      ],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "suspension-reopen-2023-05-24",
+    "assessment_date": "2023-05-24",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        1000,
+        1000
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 23940.0,
+      "equity": 23940.0,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": false,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 23940.0,
+    "equity": 22050.0,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [
+        "600446.SH"
+      ],
+      "industry_over": [
+        "801750.SI"
+      ],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "suspension-reopen-2023-05-25",
+    "assessment_date": "2023-05-25",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        1000,
+        1000
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 22050.0,
+      "equity": 22050.0,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": false,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 22050.0,
+    "equity": 20350.0,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [
+        "600446.SH"
+      ],
+      "industry_over": [
+        "801750.SI"
+      ],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "suspension-reopen-2023-05-26",
+    "assessment_date": "2023-05-26",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        1000,
+        1000
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 20350.0,
+      "equity": 20350.0,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": false,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 20350.0,
+    "equity": 19150.0,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": false,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "partial-sellable",
+    "assessment_date": "2023-05-26",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        1000,
+        150
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 20350.0,
+      "equity": 20350.0,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [
+          "600446.SH"
+        ],
+        "industry_over": [
+          "801750.SI"
+        ],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": true,
+      "account_mutated": false
+    },
+    "previous_equity": 20350.0,
+    "equity": 19150.0,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [
+        "600446.SH"
+      ],
+      "industry_over": [
+        "801750.SI"
+      ],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "zero-sellable",
+    "assessment_date": "2023-05-26",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        1000,
+        0
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 20350.0,
+      "equity": 20350.0,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [
+          "600446.SH"
+        ],
+        "industry_over": [
+          "801750.SI"
+        ],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": true,
+      "account_mutated": false
+    },
+    "previous_equity": 20350.0,
+    "equity": 19150.0,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [
+        "600446.SH"
+      ],
+      "industry_over": [
+        "801750.SI"
+      ],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "odd-lot-exit",
+    "assessment_date": "2023-05-26",
+    "input_cash": 5000,
+    "input_positions": {
+      "600446.SH": [
+        55,
+        55
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0
+    },
+    "signal_plan": {
+      "previous_equity": 5844.25,
+      "equity": 5844.25,
+      "cash": 5000,
+      "unreserved_cash_after_requests": 5000,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [],
+      "any_deferred": false,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 5844.25,
+    "equity": 5778.25,
+    "cash": 5000,
+    "unreserved_cash_after_requests": 5000,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [],
+    "any_deferred": false,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "no-sell-proceeds",
+    "assessment_date": "2023-05-26",
+    "input_cash": 100,
+    "input_positions": {
+      "600446.SH": [
+        10000,
+        10000
+      ]
+    },
+    "input_weights": {
+      "600446.SH": 0,
+      "000936.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 153600.0,
+      "equity": 153600.0,
+      "cash": 100,
+      "unreserved_cash_after_requests": 100,
+      "actual_name_over": [
+        "600446.SH"
+      ],
+      "actual_industry_over": [
+        "801750.SI"
+      ],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 7580.0
+      },
+      "unresolved": true,
+      "account_mutated": false
+    },
+    "previous_equity": 153600.0,
+    "equity": 141600.0,
+    "cash": 100,
+    "unreserved_cash_after_requests": 100,
+    "actual_name_over": [
+      "600446.SH"
+    ],
+    "actual_industry_over": [
+      "801750.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 6980.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "limit-up-buy",
+    "assessment_date": "2023-06-14",
+    "input_cash": 1000000,
+    "input_positions": {},
+    "input_weights": {
+      "000936.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000,
+      "equity": 1000000,
+      "cash": 1000000,
+      "unreserved_cash_after_requests": 900135.24,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000,
+    "equity": 1000000,
+    "cash": 1000000,
+    "unreserved_cash_after_requests": 1000000,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "limit-up-sell",
+    "assessment_date": "2023-06-14",
+    "input_cash": 1000000,
+    "input_positions": {
+      "000936.SZ": [
+        1000,
+        1000
+      ]
+    },
+    "input_weights": {
+      "000936.SZ": 0
+    },
+    "signal_plan": {
+      "previous_equity": 1008600.0,
+      "equity": 1008600.0,
+      "cash": 1000000,
+      "unreserved_cash_after_requests": 1000000,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": false,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1008600.0,
+    "equity": 1009460.0,
+    "cash": 1000000,
+    "unreserved_cash_after_requests": 1000000,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": false,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "limit-down-buy",
+    "assessment_date": "2023-05-24",
+    "input_cash": 1000000,
+    "input_positions": {},
+    "input_weights": {
+      "600446.SH": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000,
+      "equity": 1000000,
+      "cash": 1000000,
+      "unreserved_cash_after_requests": 901408.512,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000,
+    "equity": 1000000,
+    "cash": 1000000,
+    "unreserved_cash_after_requests": 911246.34,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "adv-cap",
+    "assessment_date": "2023-05-26",
+    "input_cash": 100000000,
+    "input_positions": {},
+    "input_weights": {
+      "301309.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 100000000,
+      "equity": 100000000,
+      "cash": 100000000,
+      "unreserved_cash_after_requests": 99514059.55,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 100000000,
+    "equity": 100000000,
+    "cash": 100000000,
+    "unreserved_cash_after_requests": 99517563.05,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "name-cap",
+    "assessment_date": "2023-05-26",
+    "input_cash": 1000000,
+    "input_positions": {},
+    "input_weights": {
+      "600446.SH": 0.35
+    },
+    "signal_plan": {
+      "previous_equity": 1000000,
+      "equity": 1000000,
+      "cash": 1000000,
+      "unreserved_cash_after_requests": 900120.225,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000,
+    "equity": 1000000,
+    "cash": 1000000,
+    "unreserved_cash_after_requests": 907928.025,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "sector-cap",
+    "assessment_date": "2023-05-26",
+    "input_cash": 1000000,
+    "input_positions": {},
+    "input_weights": {
+      "000936.SZ": 0.1,
+      "002170.SZ": 0.1,
+      "002442.SZ": 0.1,
+      "002637.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000,
+      "equity": 1000000,
+      "cash": 1000000,
+      "unreserved_cash_after_requests": 700680.9949999999,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000,
+    "equity": 1000000,
+    "cash": 1000000,
+    "unreserved_cash_after_requests": 700391.706,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  },
+  {
+    "case": "locked-industry",
+    "assessment_date": "2023-05-26",
+    "input_cash": 50000,
+    "input_positions": {
+      "000936.SZ": [
+        10000,
+        0
+      ]
+    },
+    "input_weights": {
+      "002170.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 114200.0,
+      "equity": 114200.0,
+      "cash": 50000,
+      "unreserved_cash_after_requests": 50000,
+      "actual_name_over": [
+        "000936.SZ"
+      ],
+      "actual_industry_over": [
+        "801030.SI"
+      ],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [
+          "000936.SZ"
+        ],
+        "industry_over": [
+          "801030.SI"
+        ],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": true,
+      "account_mutated": false
+    },
+    "previous_equity": 114200.0,
+    "equity": 117500.0,
+    "cash": 50000,
+    "unreserved_cash_after_requests": 50000,
+    "actual_name_over": [
+      "000936.SZ"
+    ],
+    "actual_industry_over": [
+      "801030.SI"
+    ],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [
+        "000936.SZ"
+      ],
+      "industry_over": [
+        "801030.SI"
+      ],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": true,
+    "account_mutated": false
+  },
+  {
+    "case": "st-buy",
+    "assessment_date": "2023-05-26",
+    "input_cash": 1000000,
+    "input_positions": {},
+    "input_weights": {
+      "000046.SZ": 0.1
+    },
+    "signal_plan": {
+      "previous_equity": 1000000,
+      "equity": 1000000,
+      "cash": 1000000,
+      "unreserved_cash_after_requests": 1000000,
+      "actual_name_over": [],
+      "actual_industry_over": [],
+      "any_deferred": true,
+      "residual": {
+        "name_over": [],
+        "industry_over": [],
+        "unclassified_held": false,
+        "cash_floor_shortfall": 0.0
+      },
+      "unresolved": false,
+      "account_mutated": false
+    },
+    "previous_equity": 1000000,
+    "equity": 1000000,
+    "cash": 1000000,
+    "unreserved_cash_after_requests": 1000000,
+    "actual_name_over": [],
+    "actual_industry_over": [],
+    "any_deferred": true,
+    "residual": {
+      "name_over": [],
+      "industry_over": [],
+      "unclassified_held": false,
+      "cash_floor_shortfall": 0.0
+    },
+    "unresolved": false,
+    "account_mutated": false
+  }
+]

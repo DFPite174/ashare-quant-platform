@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-11-10T15:15:58.599246",
+  "horizon": {
+    "start_date": "2019-01-02",
+    "end_date": "2024-12-31",
+    "total_trading_days": 1456,
+    "total_years": 6.02
+  },
+  "capital_and_friction": {
+    "initial_cash": 10000000.0,
+    "final_nav": 3889522.04,
+    "total_stamp_tax_paid": 767981.4,
+    "total_broker_commission_paid": 416839.18,
+    "total_transfer_fee_paid": 33286.79,
+    "total_slippage_cost": 832167.88,
+    "total_trading_friction": 2050275.26,
+    "annualized_turnover_rate": 27.66
+  },
+  "performance_summary": {
+    "strategy_total_return": "-61.10%",
+    "strategy_cagr": "-14.53%",
+    "strategy_annual_volatility": "14.14%",
+    "strategy_sharpe_ratio": -1.17,
+    "strategy_sortino_ratio": -1.59,
+    "strategy_max_drawdown": "-71.58%",
+    "strategy_calmar_ratio": -0.2,
+    "daily_win_rate": "46.53%"
+  },
+  "benchmark_comparison": {
+    "csi300_cagr": "4.79%",
+    "csi300_total_return": "32.51%",
+    "csi500_cagr": "5.57%",
+    "csi500_total_return": "38.57%",
+    "annualized_alpha_vs_csi500": "-20.10%",
+    "information_ratio_vs_csi500": -1.36
+  },
+  "yearly_breakdown": [
+    {
+      "Year": "2019",
+      "Strategy_Return": 0.09583721790168953,
+      "CSI300_Return": 0.37953642106898,
+      "CSI500_Return": 0.27485900324173285,
+      "Excess_vs_CSI500": -0.17902178534004332,
+      "Max_Drawdown": -0.14557540271580927,
+      "Volatility": 0.14077417041311874
+    },
+    {
+      "Year": "2020",
+      "Strategy_Return": -0.1459386983774149,
+      "CSI300_Return": 0.2550544997293991,
+      "CSI500_Return": 0.18653592085555015,
+      "Excess_vs_CSI500": -0.33247461923296506,
+      "Max_Drawdown": -0.15686805501928866,
+      "Volatility": 0.140227594207679
+    },
+    {
+      "Year": "2021",
+      "Strategy_Return": -0.15669488058228564,
+      "CSI300_Return": -0.06214167003355775,
+      "CSI500_Return": 0.1352220313646595,
+      "Excess_vs_CSI500": -0.29191691194694513,
+      "Max_Drawdown": -0.182577740540638,
+      "Volatility": 0.08573982310522608
+    },
+    {
+      "Year": "2022",
+      "Strategy_Return": -0.3117924774655415,
+      "CSI300_Return": -0.2127249748986597,
+      "CSI500_Return": -0.20259680110679013,
+      "Excess_vs_CSI500": -0.10919567635875138,
+      "Max_Drawdown": -0.33599486314498817,
+      "Volatility": 0.14737958767228587
+    },
+    {
+      "Year": "2023",
+      "Strategy_Return": -0.23157704856214256,
+      "CSI300_Return": -0.1174900059137336,
+      "CSI500_Return": -0.08842800821485008,
+      "Excess_vs_CSI500": -0.14314904034729248,
+      "Max_Drawdown": -0.2838683464773303,
+      "Volatility": 0.10816343016531096
+    },
+    {
+      "Year": "2024",
+      "Strategy_Return": -0.0636788115406578,
+      "CSI300_Return": 0.16199103566368556,
+      "CSI500_Return": 0.05846743833029855,
+      "Excess_vs_CSI500": -0.12214624987095635,
+      "Max_Drawdown": -0.17467864933514876,
+      "Volatility": 0.1999544762268262
+    }
+  ]
+}

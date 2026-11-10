@@ -1,0 +1,43 @@
+{
+  "phase": "P2",
+  "timestamp": "2026-11-09T11:07:34.941978",
+  "status": "PASS",
+  "factor_id": "momentum20",
+  "sample_counts": {
+    "total_observations": 77016,
+    "ic_cross_sections": 443,
+    "retained_ratio": 0.9418382820525363
+  },
+  "evaluation_metrics": {
+    "1D": {
+      "mean_ic": -0.028917487550667163,
+      "hac_se": 0.009937509947023913,
+      "hac_t_stat": -2.9099329414334196,
+      "se_diff": 4.718447854656915e-16,
+      "t_diff": 1.290523243824282e-12
+    },
+    "5D": {
+      "mean_ic": -0.045747752201430764,
+      "hac_se": 0.01613497778520277,
+      "hac_t_stat": -2.8353154748924156,
+      "se_diff": 1.3461454173580023e-15,
+      "t_diff": 3.4505731605349865e-13
+    },
+    "20D": {
+      "mean_ic": -0.051990619893899685,
+      "hac_se": 0.028175553925254372,
+      "hac_t_stat": -1.8452386076179088,
+      "se_diff": 1.5681900222830336e-15,
+      "t_diff": 1.509903313490213e-14
+    }
+  },
+  "tolerances": {
+    "quantile_returns_max_error": 6.264710972203602e-13,
+    "turnover_max_error": 4.848343948538059e-13
+  },
+  "formal_gate": {
+    "admitted": false,
+    "decision": "FACTOR_NOT_ADMITTED",
+    "reason": "Momentum 20-day factor exhibited negative IC across 1D/5D/20D on the 2023-2024 diagnostic cohort; negative gate enforced as designed."
+  }
+}

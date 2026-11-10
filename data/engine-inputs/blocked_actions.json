@@ -1,0 +1,20 @@
+[
+ {
+  "symbol": "688135.SH",
+  "ex_date": "20230615",
+  "reason": "CONFLICTING_ECONOMIC_TERMS",
+  "source_rows": 2
+ },
+ {
+  "symbol": "688311.SH",
+  "ex_date": "20230825",
+  "reason": "CONFLICTING_ECONOMIC_TERMS",
+  "source_rows": 2
+ },
+ {
+  "symbol": "688327.SH",
+  "ex_date": "20230613",
+  "reason": "INCOMPLETE_AMOUNT",
+  "source_rows": 1
+ }
+]

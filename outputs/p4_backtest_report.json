@@ -1,0 +1,19 @@
+{
+  "phase": "P4",
+  "timestamp": "2026-11-09T11:09:27.525938",
+  "status": "PASS",
+  "execution_model": "OBSERVED_BAR_ZERO_SYNTHETIC",
+  "reconciliation": {
+    "trading_days": 484,
+    "observed_bars_count": 85981,
+    "reconciliation_rows": 484,
+    "cash_difference": "0.00",
+    "nav_difference": "0.00",
+    "unexplained_difference": "0.00"
+  },
+  "negative_probe": {
+    "order_status": "REJECTED",
+    "filled_quantity": "0",
+    "purpose": "NEGATIVE_EXECUTION_PROBE"
+  }
+}

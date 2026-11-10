@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # =====================================================================
+  # 1. 机构级量化后端网关 (NautilusTrader 1.231.0 + Invariant Core)
+  # =====================================================================
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ashare-quant-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TUSHARE_LAKE_PATH=/data/tushare_lake
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - .:/app
+      - C:/Users/SKT80/Downloads/MyProj/my_upload/Tushare_DB/lake:/data/tushare_lake:ro
+      - ./outputs:/app/outputs
+    depends_on:
+      - redis
+    command: python scripts/run_server.py --host 0.0.0.0 --port 8000
+
+  # =====================================================================
+  # 2. QuantMind 现代化 React 交互控制台
+  # =====================================================================
+  frontend:
+    image: node:24-alpine
+    container_name: ashare-quant-frontend
+    restart: unless-stopped
+    working_dir: /app/frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app/frontend
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    command: sh -c "npm install --prefer-offline && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend
+
+  # =====================================================================
+  # 3. 状态与行情缓存 Redis 服务
+  # =====================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: ashare-quant-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

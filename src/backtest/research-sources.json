@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-09",
+  "before_implementation": true,
+  "agent_reach": {
+    "command": "agent-reach github search nautilus_trader in:name --limit 3",
+    "success": false,
+    "reason": "gh not installed/on PATH; Reach state lock directory write denied"
+  },
+  "retrieval": "Built-in web search of GitHub primary sources, then pinned local source verification",
+  "sources": [
+    "https://github.com/nautechsystems/nautilus_trader/blob/develop/docs/concepts/reports.md",
+    "https://github.com/nautechsystems/nautilus_trader/blob/develop/docs/concepts/accounting.md",
+    "https://github.com/DFPite174/ashare-nautilus-backtest-engine/tree/b8d424df1a7c7c65b29eaab1be667a5368c8be5c"
+  ],
+  "local_audit": {
+    "nt_bar_ticks": "backtest/engine.pyx::_process_trade_ticks_from_bar / _create_base_trade_tick",
+    "engine_book": "engine/liquidity.py::synthetic_book",
+    "standard_execution_used": false
+  }
+}

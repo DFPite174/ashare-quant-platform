@@ -1,0 +1,10 @@
+{
+  "engine_bars_parsed": 85981,
+  "pilot_rules": 8,
+  "pilot_bars": 3,
+  "action_security_dates": 288,
+  "accepted_action_keys": 285,
+  "blocked_action_keys": 3,
+  "limit_order_pilot_only": true,
+  "account_run": false
+}

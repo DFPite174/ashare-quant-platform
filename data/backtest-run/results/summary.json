@@ -1,0 +1,22 @@
+{
+  "scope": "RESTRICTED_NO_EXECUTION",
+  "runtime": "1.231.0",
+  "bars": 85981,
+  "assets": 197,
+  "sessions": 484,
+  "bar_execution": false,
+  "trade_execution": false,
+  "market_inputs": {
+    "Bar": 85981,
+    "TradeTick": 0,
+    "QuoteTick": 0,
+    "BookDelta": 0
+  },
+  "fills": 0,
+  "strategy_orders_submitted": 0,
+  "negative_probe_orders": 1,
+  "full_account_acceptance": "BLOCKED",
+  "attribution": "EMPTY_ACCOUNT_ONLY",
+  "nonzero_fees": "NOT_TESTED",
+  "nonzero_corporate_actions": "NOT_TESTED"
+}

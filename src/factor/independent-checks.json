@@ -1,0 +1,63 @@
+{
+  "snapshot_files": 4,
+  "market_rows": 85981,
+  "market_assets": 197,
+  "sessions": 484,
+  "clean_rows": 77016,
+  "ic_sessions": 443,
+  "max_absolute_difference": {
+    "1D": 4.978933931809593e-13,
+    "20D": 4.9604764740251994e-12,
+    "5D": 5.766498389903063e-13,
+    "factor": 4.934053166039121e-12,
+    "factor_quantile": 0.0
+  },
+  "max_ic_difference": {
+    "1D": 4.965333699757934e-13,
+    "5D": 4.961586697049825e-13,
+    "20D": 4.968803146709888e-13
+  },
+  "mean_ic": {
+    "1D": -0.028917487550681374,
+    "5D": -0.045747752201429,
+    "20D": -0.05199061989390217
+  },
+  "pit_declared": false,
+  "quantile_returns_max_error": 6.264710972203602e-13,
+  "turnover_max_error": 4.848343948538059e-13,
+  "hac_difference": {
+    "1D": {
+      "se_diff": 1.5612511283791264e-17,
+      "t_diff": 3.552713678800501e-15
+    },
+    "5D": {
+      "se_diff": 2.42861286636753e-17,
+      "t_diff": 5.329070518200751e-15
+    },
+    "20D": {
+      "se_diff": 4.5102810375396984e-17,
+      "t_diff": 2.4424906541753444e-15
+    }
+  },
+  "prefix": {
+    "2023-02-07": {
+      "observations": 173,
+      "max_abs_diff": 1.1102230246251565e-16
+    },
+    "2023-12-29": {
+      "observations": 39181,
+      "max_abs_diff": 2.220446049250313e-16
+    },
+    "2024-12-02": {
+      "observations": 78066,
+      "max_abs_diff": 4.440892098500626e-16
+    }
+  },
+  "decision_quantiles_error": 0.0,
+  "exclusive_counts": {
+    "missing_factor": 4964,
+    "valid_factor_missing_label": 4756,
+    "complete_input_but_not_retained": 0,
+    "retained": 77016
+  }
+}

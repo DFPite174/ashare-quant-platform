@@ -1,0 +1,8 @@
+[
+  {
+    "client_order_id": "P4-NEGATIVE-001",
+    "status": "REJECTED",
+    "filled_quantity": "0",
+    "purpose": "NEGATIVE_EXECUTION_PROBE"
+  }
+]

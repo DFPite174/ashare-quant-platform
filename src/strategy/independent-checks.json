@@ -1,0 +1,12 @@
+{
+  "weeks": 97,
+  "targets": 970,
+  "decision_rows": 991,
+  "weekly_nonzero": 793,
+  "weekly_zero": 177,
+  "weekly_with_deferred": 919,
+  "diagnostic_extra_cases": 16,
+  "illegal_requests_passing": 0,
+  "mutated_positions": 0,
+  "fills": 0
+}

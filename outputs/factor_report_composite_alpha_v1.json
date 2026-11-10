@@ -1,0 +1,75 @@
+{
+  "phase": "P2_SELF_HEALED",
+  "timestamp": "2026-11-10T15:57:19.144452",
+  "status": "PASS",
+  "factor_id": "composite_alpha_v1",
+  "hypothesis": "Multi-factor composite blending volatility-standardized reversal, liquidity penalty, and earnings-to-price value with industry neutrality predicts positive forward returns.",
+  "sample_counts": {
+    "total_observations": 59140,
+    "ic_cross_sections": 458,
+    "retained_ratio": 0.9860446504493389
+  },
+  "evaluation_metrics": {
+    "1D": {
+      "mean_ic": 0.04362642490652715,
+      "hac_se": 0.005839980116507875,
+      "hac_t_stat": 7.470303671618386,
+      "icir": 0.33772112408352445,
+      "valid_days": 458
+    },
+    "5D": {
+      "mean_ic": 0.06760977913847052,
+      "hac_se": 0.010199191602824386,
+      "hac_t_stat": 6.628935093223256,
+      "icir": 0.551180779623936,
+      "valid_days": 458
+    },
+    "20D": {
+      "mean_ic": 0.09650336411932182,
+      "hac_se": 0.021293349283867773,
+      "hac_t_stat": 4.532089472295207,
+      "icir": 0.7386447749269796,
+      "valid_days": 443
+    }
+  },
+  "quantile_analysis": {
+    "1D": {
+      "quantiles": {
+        "1": -0.0010676334886350277,
+        "2": 0.00039745061229610513,
+        "3": 5.107680339283131e-05,
+        "4": 0.0004697364311201726,
+        "5": 0.0005660965851123058
+      },
+      "spread_q5_minus_q1": 0.0016337300737473337,
+      "monotonicity": 0.8999999999999998
+    },
+    "5D": {
+      "quantiles": {
+        "1": -0.004624535167171343,
+        "2": 0.0007392483304370585,
+        "3": 0.0012578709102254815,
+        "4": 0.00206958920795639,
+        "5": 0.0027805598655384835
+      },
+      "spread_q5_minus_q1": 0.007405095032709827,
+      "monotonicity": 0.9999999999999999
+    },
+    "20D": {
+      "quantiles": {
+        "1": -0.011945101358483907,
+        "2": -0.0015588434920248088,
+        "3": 0.003696414362789291,
+        "4": 0.01043290594872907,
+        "5": 0.011313729780298824
+      },
+      "spread_q5_minus_q1": 0.02325883113878273,
+      "monotonicity": 0.9999999999999999
+    }
+  },
+  "formal_gate": {
+    "admitted": true,
+    "decision": "FACTOR_ADMITTED",
+    "reason": "Self-healed composite factor achieved positive Rank IC (+0.0676) with HAC t-stat (+6.63) and positive Q5-Q1 spread (+0.74%) on real 2023-2024 cohort."
+  }
+}

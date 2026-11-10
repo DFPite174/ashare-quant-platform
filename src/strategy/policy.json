@@ -1,0 +1,8 @@
+{
+  "id": "p3-day-close-diagnostic-v1", "top_n": 10, "cash_floor": 0.05,
+  "name_cap": 0.10, "industry_cap": 0.30, "adv_fraction": 0.05,
+  "min_fee": 5.0, "fee_buffer": 0.001, "reference_cash": 1000000.0,
+  "weekly_account": "independent cash-only book; no carry of requests or assumed fills",
+  "planning_clock": "Asia/Shanghai 18:00 on signal session; only information through signal session",
+  "assessment_clock": "Asia/Shanghai 18:00 on the next session; retrospective close-price review bounded by the prior draft; not an execution instruction"
+}

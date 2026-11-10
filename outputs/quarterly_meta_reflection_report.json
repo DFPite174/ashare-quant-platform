@@ -1,0 +1,280 @@
+{
+  "timestamp": "2026-11-10T17:08:08.743011",
+  "analyzed_quarters": 24,
+  "dominant_regimes": {
+    "BULL_MOMENTUM": 1,
+    "BEAR_DRAWDOWN": 7,
+    "CHOPPY_ROTATION": 3,
+    "STABLE_EXPANSION": 13
+  },
+  "recommended_cash_floor": 0.05,
+  "recommended_turnover_penalty": 0.003,
+  "recommended_industry_tolerance": 0.02,
+  "strategic_action_plan": "【元反思标准均衡决策】：维持标准 5% 现金垫与 +/- 2% 行业中性化约束。",
+  "quarterly_breakdown": [
+    {
+      "quarter": "2019Q1",
+      "strategy_return": 0.18969182765626758,
+      "benchmark_500_return": 0.34262203183300555,
+      "excess_return": -0.15293020417673797,
+      "max_drawdown": -0.042182013750792,
+      "volatility": 0.17867707607731417,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2019Q2",
+      "strategy_return": -0.05959141936982382,
+      "benchmark_500_return": -0.1402189700408204,
+      "excess_return": 0.08062755067099658,
+      "max_drawdown": -0.12282186862425759,
+      "volatility": 0.1995724191558729,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    },
+    {
+      "quarter": "2019Q3",
+      "strategy_return": -0.04916788583172926,
+      "benchmark_500_return": -0.031245238602354952,
+      "excess_return": -0.01792264722937431,
+      "max_drawdown": -0.04986267592784421,
+      "volatility": 0.07209798889464784,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2019Q4",
+      "strategy_return": 0.0002848854929728972,
+      "benchmark_500_return": 0.06594845841078456,
+      "excess_return": -0.06566357291781166,
+      "max_drawdown": -0.04405304317345682,
+      "volatility": 0.06469840724170259,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2020Q1",
+      "strategy_return": -0.11878560851673825,
+      "benchmark_500_return": -0.06050610890980701,
+      "excess_return": -0.05827949960693124,
+      "max_drawdown": -0.14048321689773857,
+      "volatility": 0.20191928357156877,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    },
+    {
+      "quarter": "2020Q2",
+      "strategy_return": -0.020414166230293795,
+      "benchmark_500_return": 0.16839228384290172,
+      "excess_return": -0.18880645007319552,
+      "max_drawdown": -0.04833887692625871,
+      "volatility": 0.08643046646171883,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BULL_MOMENTUM",
+      "diagnosis": "强动量赛道行情，反转因子遭动量严重挤压，产生负超额"
+    },
+    {
+      "quarter": "2020Q3",
+      "strategy_return": 0.0016834265337943854,
+      "benchmark_500_return": 0.05280906851754641,
+      "excess_return": -0.051125641983752024,
+      "max_drawdown": -0.08597318465813975,
+      "volatility": 0.16105865841691233,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "CHOPPY_ROTATION",
+      "diagnosis": "高波动存量轮动博弈，过度换手产生严重摩擦，需加大换手惩罚项"
+    },
+    {
+      "quarter": "2020Q4",
+      "strategy_return": -0.029065777991710395,
+      "benchmark_500_return": 0.0014381631901410064,
+      "excess_return": -0.0305039411818514,
+      "max_drawdown": -0.05706854593243926,
+      "volatility": 0.07888558228031577,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2021Q1",
+      "strategy_return": -0.027570611187003546,
+      "benchmark_500_return": -0.03528070674790662,
+      "excess_return": 0.007710095560903074,
+      "max_drawdown": -0.03312454313826174,
+      "volatility": 0.09097014772245526,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2021Q2",
+      "strategy_return": -0.026688454796700234,
+      "benchmark_500_return": 0.078666841031662,
+      "excess_return": -0.10535529582836223,
+      "max_drawdown": -0.03769067364041423,
+      "volatility": 0.06663031720823447,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2021Q3",
+      "strategy_return": -0.07665606417510606,
+      "benchmark_500_return": 0.057609208426002256,
+      "excess_return": -0.13426527260110832,
+      "max_drawdown": -0.0816548621729053,
+      "volatility": 0.09342921861290629,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2021Q4",
+      "strategy_return": -0.04455447658517475,
+      "benchmark_500_return": 0.03780201856473964,
+      "excess_return": -0.08235649514991439,
+      "max_drawdown": -0.07121543378228823,
+      "volatility": 0.09368412002832635,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2022Q1",
+      "strategy_return": -0.10059413700175024,
+      "benchmark_500_return": -0.13998251835397424,
+      "excess_return": 0.039388381352224,
+      "max_drawdown": -0.1467371366467345,
+      "volatility": 0.17035377387486964,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    },
+    {
+      "quarter": "2022Q2",
+      "strategy_return": -0.09278823858466168,
+      "benchmark_500_return": 0.0140713190558297,
+      "excess_return": -0.10685955764049138,
+      "max_drawdown": -0.11232591647326762,
+      "volatility": 0.17532268817654642,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "CHOPPY_ROTATION",
+      "diagnosis": "高波动存量轮动博弈，过度换手产生严重摩擦，需加大换手惩罚项"
+    },
+    {
+      "quarter": "2022Q3",
+      "strategy_return": -0.10543493949604565,
+      "benchmark_500_return": -0.11252160913872145,
+      "excess_return": 0.007086669642675791,
+      "max_drawdown": -0.10724277795244885,
+      "volatility": 0.12050835942979442,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    },
+    {
+      "quarter": "2022Q4",
+      "strategy_return": -0.05491827507756364,
+      "benchmark_500_return": 0.04059044263608347,
+      "excess_return": -0.0955087177136471,
+      "max_drawdown": -0.088192069378348,
+      "volatility": 0.12948600728124834,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2023Q1",
+      "strategy_return": -0.013950696539455798,
+      "benchmark_500_return": 0.06446071959371902,
+      "excess_return": -0.07841141613317482,
+      "max_drawdown": -0.06401835379577214,
+      "volatility": 0.10579030137237974,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2023Q2",
+      "strategy_return": -0.08487389504660547,
+      "benchmark_500_return": -0.06471631911984643,
+      "excess_return": -0.02015757592675904,
+      "max_drawdown": -0.09569058358110305,
+      "volatility": 0.09836021253323406,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    },
+    {
+      "quarter": "2023Q3",
+      "strategy_return": -0.021644333494969525,
+      "benchmark_500_return": -0.05818012846141918,
+      "excess_return": 0.03653579496644965,
+      "max_drawdown": -0.06620781923912267,
+      "volatility": 0.10558343368453142,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2023Q4",
+      "strategy_return": -0.12632983843034984,
+      "benchmark_500_return": -0.04044733735976169,
+      "excess_return": -0.08588250107058815,
+      "max_drawdown": -0.14847697146905536,
+      "volatility": 0.1251019660433634,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2024Q1",
+      "strategy_return": -0.012256493428189574,
+      "benchmark_500_return": -0.02279234985466383,
+      "excess_return": 0.010535856426474255,
+      "max_drawdown": -0.16047217189777552,
+      "volatility": 0.29439237760517445,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "CHOPPY_ROTATION",
+      "diagnosis": "高波动存量轮动博弈，过度换手产生严重摩擦，需加大换手惩罚项"
+    },
+    {
+      "quarter": "2024Q2",
+      "strategy_return": -0.02755552694180452,
+      "benchmark_500_return": -0.08487763581183239,
+      "excess_return": 0.057322108870027866,
+      "max_drawdown": -0.06258203112000005,
+      "volatility": 0.12296008711964622,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    },
+    {
+      "quarter": "2024Q3",
+      "strategy_return": 0.006250612500318331,
+      "benchmark_500_return": 0.14791773232633254,
+      "excess_return": -0.1416671198260142,
+      "max_drawdown": -0.12606920238574681,
+      "volatility": 0.17007272923905953,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "STABLE_EXPANSION",
+      "diagnosis": "平稳温和市场环境，多因子Alpha稳健生效"
+    },
+    {
+      "quarter": "2024Q4",
+      "strategy_return": -0.045472926098041655,
+      "benchmark_500_return": -0.0698308171265114,
+      "excess_return": 0.024357891028469747,
+      "max_drawdown": -0.055080376171883993,
+      "volatility": 0.19232459944288727,
+      "total_friction_paid": 85428.13,
+      "regime_classification": "BEAR_DRAWDOWN",
+      "diagnosis": "系统性大盘下行，需提高现金防御垫并收紧组合波动率约束"
+    }
+  ]
+}

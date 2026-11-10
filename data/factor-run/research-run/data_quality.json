@@ -1,0 +1,4435 @@
+{
+  "duplicates": {
+    "market": 0,
+    "universe": 0,
+    "validated_by": "load_dataset rejects duplicates before this report"
+  },
+  "fields": {
+    "adj_factor": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "amount": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "available_at": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "close": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "dividend_yield": {
+      "eligible": 86736,
+      "missing": 29457
+    },
+    "float_mv": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "high": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "low": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "open": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "pb": {
+      "eligible": 86736,
+      "missing": 2143
+    },
+    "pe_ttm": {
+      "eligible": 86736,
+      "missing": 23533
+    },
+    "ps_ttm": {
+      "eligible": 86736,
+      "missing": 800
+    },
+    "shares_outstanding": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "total_mv": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "turnover_rate": {
+      "eligible": 86736,
+      "missing": 755
+    },
+    "volume": {
+      "eligible": 86736,
+      "missing": 755
+    }
+  },
+  "financial": {},
+  "financial_computed": false,
+  "financial_events_present": true,
+  "kind": "DATA_QUALITY_NOT_PIT_CERTIFICATION",
+  "quantile_ties": [
+    {
+      "date": "2023-01-03",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-04",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-05",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-06",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-09",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-10",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-11",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-12",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-13",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-16",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-17",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-18",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-19",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-20",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-30",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-01-31",
+      "eligible": 174,
+      "missing": 174,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-02-01",
+      "eligible": 175,
+      "missing": 175,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-02-02",
+      "eligible": 175,
+      "missing": 175,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-02-03",
+      "eligible": 175,
+      "missing": 175,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-02-06",
+      "eligible": 175,
+      "missing": 175,
+      "quantile_refusal_reason": "no_finite_factor",
+      "tied_observations": 0,
+      "unique": 0,
+      "valid": 0
+    },
+    {
+      "date": "2023-02-07",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-08",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-09",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 171,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-10",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-13",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-14",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-15",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-16",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-17",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-20",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2023-02-21",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-02-22",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-02-23",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-24",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 171,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-27",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-02-28",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-01",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-03-02",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2023-03-03",
+      "eligible": 178,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 171,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-06",
+      "eligible": 178,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-03-07",
+      "eligible": 178,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-08",
+      "eligible": 178,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-09",
+      "eligible": 178,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 171,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-10",
+      "eligible": 178,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-13",
+      "eligible": 179,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 172,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-14",
+      "eligible": 179,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-15",
+      "eligible": 179,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-03-16",
+      "eligible": 179,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-03-17",
+      "eligible": 179,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-03-20",
+      "eligible": 180,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-21",
+      "eligible": 180,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-22",
+      "eligible": 180,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-23",
+      "eligible": 180,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 173,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-24",
+      "eligible": 180,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-27",
+      "eligible": 179,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 174,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-28",
+      "eligible": 179,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 174,
+      "valid": 175
+    },
+    {
+      "date": "2023-03-29",
+      "eligible": 179,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-03-30",
+      "eligible": 179,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-03-31",
+      "eligible": 179,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2023-04-03",
+      "eligible": 179,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-04-04",
+      "eligible": 180,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-04-06",
+      "eligible": 180,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-04-07",
+      "eligible": 180,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2023-04-10",
+      "eligible": 181,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2023-04-11",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 176,
+      "valid": 178
+    },
+    {
+      "date": "2023-04-12",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-04-13",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-04-14",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-04-17",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-04-18",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-19",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-20",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-21",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-24",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-25",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-26",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-04-27",
+      "eligible": 181,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-04-28",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-04",
+      "eligible": 181,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 166,
+      "valid": 166
+    },
+    {
+      "date": "2023-05-05",
+      "eligible": 181,
+      "missing": 8,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-05-08",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-09",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-10",
+      "eligible": 181,
+      "missing": 8,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-05-11",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-12",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-15",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-16",
+      "eligible": 181,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-05-17",
+      "eligible": 181,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-05-18",
+      "eligible": 182,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 174,
+      "valid": 175
+    },
+    {
+      "date": "2023-05-19",
+      "eligible": 183,
+      "missing": 9,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-22",
+      "eligible": 183,
+      "missing": 9,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-23",
+      "eligible": 184,
+      "missing": 10,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-24",
+      "eligible": 185,
+      "missing": 10,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-05-25",
+      "eligible": 185,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-26",
+      "eligible": 185,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-05-29",
+      "eligible": 185,
+      "missing": 12,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-05-30",
+      "eligible": 185,
+      "missing": 13,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-05-31",
+      "eligible": 185,
+      "missing": 13,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-06-01",
+      "eligible": 185,
+      "missing": 18,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 167,
+      "valid": 167
+    },
+    {
+      "date": "2023-06-02",
+      "eligible": 185,
+      "missing": 13,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-06-05",
+      "eligible": 186,
+      "missing": 14,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 171,
+      "valid": 172
+    },
+    {
+      "date": "2023-06-06",
+      "eligible": 186,
+      "missing": 14,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-06-07",
+      "eligible": 186,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 170,
+      "valid": 171
+    },
+    {
+      "date": "2023-06-08",
+      "eligible": 186,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 171,
+      "valid": 171
+    },
+    {
+      "date": "2023-06-09",
+      "eligible": 186,
+      "missing": 16,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 170,
+      "valid": 170
+    },
+    {
+      "date": "2023-06-12",
+      "eligible": 186,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 171,
+      "valid": 171
+    },
+    {
+      "date": "2023-06-13",
+      "eligible": 186,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 171,
+      "valid": 171
+    },
+    {
+      "date": "2023-06-14",
+      "eligible": 186,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 171,
+      "valid": 171
+    },
+    {
+      "date": "2023-06-15",
+      "eligible": 186,
+      "missing": 15,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 171,
+      "valid": 171
+    },
+    {
+      "date": "2023-06-16",
+      "eligible": 186,
+      "missing": 14,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-06-19",
+      "eligible": 186,
+      "missing": 14,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2023-06-20",
+      "eligible": 186,
+      "missing": 13,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2023-06-21",
+      "eligible": 186,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-06-26",
+      "eligible": 186,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-06-27",
+      "eligible": 186,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-06-28",
+      "eligible": 185,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2023-06-29",
+      "eligible": 185,
+      "missing": 11,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-06-30",
+      "eligible": 184,
+      "missing": 10,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2023-07-03",
+      "eligible": 184,
+      "missing": 9,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-07-04",
+      "eligible": 184,
+      "missing": 9,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2023-07-05",
+      "eligible": 183,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-06",
+      "eligible": 182,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-07",
+      "eligible": 182,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-10",
+      "eligible": 181,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-11",
+      "eligible": 181,
+      "missing": 5,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-12",
+      "eligible": 180,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-07-13",
+      "eligible": 180,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-07-14",
+      "eligible": 180,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2023-07-17",
+      "eligible": 180,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-18",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-19",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-20",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-21",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-24",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 174,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-25",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-26",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-27",
+      "eligible": 179,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2023-07-28",
+      "eligible": 179,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2023-07-31",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-01",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-02",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-03",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-04",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-07",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-08",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-09",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-10",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-11",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 176,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-14",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-15",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-16",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-17",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-18",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-21",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-22",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-23",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-24",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-25",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-28",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-29",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-30",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-08-31",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-09-01",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-09-04",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-09-05",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-09-06",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-09-07",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-08",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-11",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-12",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-13",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-14",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-15",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-18",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-19",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-20",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-21",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-22",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-25",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-26",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-27",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-09-28",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-09",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-10",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-11",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-12",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-13",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-16",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-17",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-18",
+      "eligible": 179,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-10-19",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-20",
+      "eligible": 179,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-23",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-24",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-25",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-26",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-27",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-30",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-10-31",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-01",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-02",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-03",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-06",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-11-07",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-11-08",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-11-09",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-11-10",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 177,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-13",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-14",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-15",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-11-16",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-17",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2023-11-20",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-21",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-11-22",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-11-23",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-11-24",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-11-27",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 178,
+      "valid": 180
+    },
+    {
+      "date": "2023-11-28",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2023-11-29",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2023-11-30",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-12-01",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-12-04",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-05",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-06",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-07",
+      "eligible": 180,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 5,
+      "unique": 174,
+      "valid": 178
+    },
+    {
+      "date": "2023-12-08",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-11",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-12",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 176,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-13",
+      "eligible": 180,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-14",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-12-15",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-18",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-19",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-20",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-21",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-22",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2023-12-25",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-26",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-12-27",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2023-12-28",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2023-12-29",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-02",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-03",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-04",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-05",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-08",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-09",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-10",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-11",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-12",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-15",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-16",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-17",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-18",
+      "eligible": 182,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-19",
+      "eligible": 182,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-22",
+      "eligible": 182,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-23",
+      "eligible": 182,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-24",
+      "eligible": 182,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-25",
+      "eligible": 182,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-01-26",
+      "eligible": 182,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-29",
+      "eligible": 182,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-30",
+      "eligible": 182,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-01-31",
+      "eligible": 182,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-02-01",
+      "eligible": 182,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-02-02",
+      "eligible": 182,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-02-05",
+      "eligible": 182,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-06",
+      "eligible": 182,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-07",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-08",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-19",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-02-20",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-02-21",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-02-22",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2024-02-23",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-26",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-27",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 178,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-28",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-02-29",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-03-01",
+      "eligible": 181,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-03-04",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-03-05",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-03-06",
+      "eligible": 181,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 179,
+      "valid": 179
+    },
+    {
+      "date": "2024-03-07",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 178,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-08",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-11",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-12",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-13",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-14",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-15",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-18",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-19",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-20",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-21",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-22",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-25",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-26",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-27",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-28",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-03-29",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-01",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 178,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-02",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-03",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-08",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-09",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-10",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-11",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-12",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-15",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-16",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-17",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-18",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-19",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-22",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-23",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-24",
+      "eligible": 181,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-25",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 180,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-26",
+      "eligible": 180,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 179,
+      "valid": 180
+    },
+    {
+      "date": "2024-04-29",
+      "eligible": 180,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2024-04-30",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-06",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-07",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-08",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-09",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 171,
+      "valid": 173
+    },
+    {
+      "date": "2024-05-10",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-05-13",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-05-14",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-15",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-16",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-17",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-20",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-21",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-22",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-23",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-24",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-27",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-28",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-29",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-05-30",
+      "eligible": 180,
+      "missing": 9,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 169,
+      "valid": 171
+    },
+    {
+      "date": "2024-05-31",
+      "eligible": 180,
+      "missing": 8,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 172,
+      "valid": 172
+    },
+    {
+      "date": "2024-06-03",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-06-04",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-06-05",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-06-06",
+      "eligible": 180,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-06-07",
+      "eligible": 181,
+      "missing": 8,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-06-11",
+      "eligible": 181,
+      "missing": 8,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-06-12",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-13",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-14",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-17",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-18",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-19",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-20",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-21",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-24",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-25",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-26",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-27",
+      "eligible": 181,
+      "missing": 7,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-06-28",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-01",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-02",
+      "eligible": 180,
+      "missing": 6,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-03",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-04",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-05",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-08",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 174,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-09",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-10",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-11",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-12",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-15",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-16",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-07-17",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-18",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-19",
+      "eligible": 178,
+      "missing": 4,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-22",
+      "eligible": 177,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-23",
+      "eligible": 177,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-24",
+      "eligible": 177,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-25",
+      "eligible": 177,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-26",
+      "eligible": 177,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 171,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-29",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 172,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-30",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-07-31",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-01",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-02",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-05",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-06",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-07",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-08",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-09",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-12",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-13",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-14",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-15",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 172,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-16",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 171,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-19",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 172,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-20",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 8,
+      "unique": 168,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-21",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 171,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-22",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 5,
+      "unique": 171,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-23",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-26",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-27",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-28",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-29",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-08-30",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-02",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-03",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-04",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-05",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-06",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-09",
+      "eligible": 175,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 5,
+      "unique": 170,
+      "valid": 173
+    },
+    {
+      "date": "2024-09-10",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-11",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-12",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-13",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-18",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-19",
+      "eligible": 175,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-20",
+      "eligible": 174,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 172,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-23",
+      "eligible": 174,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-24",
+      "eligible": 174,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-25",
+      "eligible": 174,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-26",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-27",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-09-30",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-08",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-09",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-10",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-11",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-14",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-15",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-16",
+      "eligible": 176,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 173,
+      "valid": 173
+    },
+    {
+      "date": "2024-10-17",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-18",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-21",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-22",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-23",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 173,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-24",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-25",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-28",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-29",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-30",
+      "eligible": 176,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 174,
+      "valid": 174
+    },
+    {
+      "date": "2024-10-31",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-01",
+      "eligible": 176,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-11-04",
+      "eligible": 176,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-11-05",
+      "eligible": 176,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-11-06",
+      "eligible": 176,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-11-07",
+      "eligible": 176,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-11-08",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-11",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-12",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-13",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-14",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-15",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-18",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-19",
+      "eligible": 176,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-20",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-21",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-22",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-25",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 4,
+      "unique": 173,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-26",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-27",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-28",
+      "eligible": 177,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-11-29",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-12-02",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 174,
+      "valid": 175
+    },
+    {
+      "date": "2024-12-03",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 3,
+      "unique": 173,
+      "valid": 175
+    },
+    {
+      "date": "2024-12-04",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 174,
+      "valid": 175
+    },
+    {
+      "date": "2024-12-05",
+      "eligible": 178,
+      "missing": 3,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 175,
+      "valid": 175
+    },
+    {
+      "date": "2024-12-06",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-09",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-10",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 175,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-11",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-12",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-13",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-16",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-17",
+      "eligible": 178,
+      "missing": 2,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 176,
+      "valid": 176
+    },
+    {
+      "date": "2024-12-18",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-19",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-20",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-23",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-24",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-25",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 177,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-26",
+      "eligible": 178,
+      "missing": 1,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 176,
+      "valid": 177
+    },
+    {
+      "date": "2024-12-27",
+      "eligible": 178,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    },
+    {
+      "date": "2024-12-30",
+      "eligible": 178,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 2,
+      "unique": 177,
+      "valid": 178
+    },
+    {
+      "date": "2024-12-31",
+      "eligible": 178,
+      "missing": 0,
+      "quantile_refusal_reason": null,
+      "tied_observations": 0,
+      "unique": 178,
+      "valid": 178
+    }
+  ]
+}

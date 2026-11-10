@@ -1,0 +1,16 @@
+{
+  "end": "2024-12-31",
+  "entry_lag": 1,
+  "factor": "supplied",
+  "max_loss": 0.35,
+  "neutralize": false,
+  "periods": [
+    1,
+    5,
+    20
+  ],
+  "preprocessing": null,
+  "quantiles": 5,
+  "split_date": null,
+  "start": "2023-01-03"
+}

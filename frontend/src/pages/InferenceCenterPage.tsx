@@ -1,0 +1,1161 @@
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import {
+  Search, Play, Calendar, Sparkles, RefreshCw, Layers, Database, Sliders, Clock,
+  Cpu, TrendingUp, BarChart3, History, Shield, CheckCircle2, AlertCircle, Info, Star,
+  LayoutGrid, ArrowRight, Activity
+} from 'lucide-react';
+import {
+  Button, Input, Select, DatePicker, message, Spin, Tooltip, Tag, Tabs, Badge, Card, Table, Typography, Empty
+} from 'antd';
+import dayjs, { Dayjs } from 'dayjs';
+import { clsx } from 'clsx';
+import { useLocation, useNavigate } from 'react-router-dom';
+import {
+  inferenceCenterService,
+  SingleStockPredictionResponse,
+  AvailableModelOption,
+  KlineItem,
+} from '../services/inferenceCenterService';
+import {
+  modelTrainingService,
+  UserModelRecord,
+  SystemModelRecord,
+  InferenceRunRecord,
+  InferencePrecheckResult,
+  LatestInferenceRunInfo,
+} from '../services/modelTrainingService';
+import {
+  calcTimeSplitStats,
+  extractModelType,
+  formatTrendLabel,
+  getMeta,
+  getMetrics,
+  isSystemModel,
+  modelDisplayName,
+  systemModelToUserModel,
+} from './modelRegistryUtils';
+import { InferenceCenterPanel } from './modelRegistryPanels';
+import { StockPoolPickerModal } from '../components/backtest/StockPoolPickerModal';
+import type { StockPoolOption } from '../services/stockPoolOptionService';
+import { StockForecastChart } from '../features/inference-center/components/StockForecastChart';
+import { ModelScoreCurveGrid } from '../features/inference-center/components/ModelScoreCurveGrid';
+import { FeatureDriversPanel } from '../features/inference-center/components/FeatureDriversPanel';
+import { InferenceHistoryPanel } from '../components/inference/InferenceHistoryPanel';
+import { useAppSelector } from '../store';
+import { selectCurrentMarket } from '../store/slices/uiSlice';
+import { getMarketConfig } from '../config/marketConfig';
+import { normalizeSymbol, splitPrefixCode, toSuffixCode } from '../utils/portfolioUtils';
+import { stockListService, Stock } from '../services/stockListService';
+
+const { Text } = Typography;
+
+// 个股推理同时使用的模型数量上限（与后端 consensus_model_ids[:6] 保持一致）
+const MAX_CONSENSUS_MODELS = 6;
+
+// 模型卡片类型
+type ModelCardOption = AvailableModelOption & {
+  category: 'tree' | 'dl' | 'ensemble';
+  tag: string;
+  horizonDesc: string;
+  sharpe: number;
+  quantileSupport: boolean;
+};
+
+export const InferenceCenterPage: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentMarket = useAppSelector(selectCurrentMarket);
+  const marketConfig = getMarketConfig(currentMarket);
+
+  // 顶层 Tab：'cross-section'（市场截面推理）| 'individual'（个股推理中心）
+  // 从别的页面带 state.tab 跳进来时要真正生效（原来三元两支都写 'cross-section'，该 Tab 永远进不去）
+  const initialTopTab = (location.state as any)?.tab === 'individual' ? 'individual' : 'cross-section';
+  const initialModelId = (location.state as any)?.modelId || '';
+  const [topTab, setTopTab] = useState<'cross-section' | 'individual'>(initialTopTab);
+
+  // ─────────────────────────────────────────────────────────────
+  // 模块 1：市场截面推理 (Cross-Section Inference) 状态
+  // ─────────────────────────────────────────────────────────────
+  const [crossSectionMode, setCrossSectionMode] = useState<'single' | 'history'>('single');
+  const [registeredModels, setRegisteredModels] = useState<UserModelRecord[]>([]);
+  const [modelsLoading, setModelsLoading] = useState(false);
+  const [selectedModelId, setSelectedModelId] = useState<string>(initialModelId);
+  const [inferenceDate, setInferenceDate] = useState<Dayjs | null>(dayjs());
+  const [inferenceTargetDate, setInferenceTargetDate] = useState<string>('');
+  const [inferenceTargetLoading, setInferenceTargetLoading] = useState(false);
+  const [inferenceRunning, setInferenceRunning] = useState(false);
+  const [lastInferenceRun, setLastInferenceRun] = useState<InferenceRunRecord | null>(null);
+  const [latestInferenceRun, setLatestInferenceRun] = useState<LatestInferenceRunInfo | null>(null);
+  const [latestInferenceRunLoading, setLatestInferenceRunLoading] = useState(false);
+  const [inferencePrecheck, setInferencePrecheck] = useState<InferencePrecheckResult | null>(null);
+  const [inferencePrecheckLoading, setInferencePrecheckLoading] = useState(false);
+  const [inferenceHistory, setInferenceHistory] = useState<InferenceRunRecord[]>([]);
+  const [inferenceHistoryLoading, setInferenceHistoryLoading] = useState(false);
+  const [historyRunIdFilter, setHistoryRunIdFilter] = useState('');
+  const [historyStatusFilter, setHistoryStatusFilter] = useState<'all' | 'running' | 'completed' | 'failed'>('all');
+  const [historyDateFilter, setHistoryDateFilter] = useState<Dayjs | null>(null);
+  // 单日推理股票池（P3）：null=全市场，否则 pool:<code> 引用；只裁信号，不进 pred.parquet
+  const [inferPoolRef, setInferPoolRef] = useState<string | null>(null);
+  const [inferPoolName, setInferPoolName] = useState<string>('');
+  const [inferPoolId, setInferPoolId] = useState<string | null>(null);
+  const [inferPoolPickerOpen, setInferPoolPickerOpen] = useState(false);
+
+  // ─────────────────────────────────────────────────────────────
+  // 模块 2：个股推理中心 (Individual Stock Inference) 状态
+  // ─────────────────────────────────────────────────────────────
+  const [symbol, setSymbol] = useState('600519.SH');
+  const [inputCode, setInputCode] = useState('600519.SH');
+  const [singleStockModelId, setSingleStockModelId] = useState<string>('');
+  const [modelCategoryFilter, setModelCategoryFilter] = useState<'all' | 'dl' | 'tree' | 'ensemble'>('all');
+  const [horizon, setHorizon] = useState<number>(5);
+  const [singleStockDate, setSingleStockDate] = useState<Dayjs | null>(dayjs());
+  const [consensusModelIds, setConsensusModelIds] = useState<string[]>([]);
+  const [singleStockLoading, setSingleStockLoading] = useState(false);
+  const [availableModels, setAvailableModels] = useState<ModelCardOption[]>([]);
+  const [individualModelsLoading, setIndividualModelsLoading] = useState(false);
+  const [kline, setKline] = useState<KlineItem[]>([]);
+  const [prediction, setPrediction] = useState<SingleStockPredictionResponse | null>(null);
+  // 目标代码联想搜索
+  const [codeSuggestions, setCodeSuggestions] = useState<Stock[]>([]);
+  const [showCodeSuggestions, setShowCodeSuggestions] = useState(false);
+
+  // 挂载时预加载本地股票列表（内存搜索，零延迟）
+  useEffect(() => {
+    stockListService.load().catch((err) => {
+      console.warn('[InferenceCenter] 股票列表加载失败，联想搜索降级为直接输入:', err);
+    });
+  }, []);
+
+  // 输入防抖联想：代码或名称模糊匹配
+  useEffect(() => {
+    const kw = inputCode.trim();
+    if (!showCodeSuggestions || kw.length < 2) {
+      setCodeSuggestions([]);
+      return;
+    }
+    const timer = setTimeout(() => {
+      try {
+        // 前缀式/后缀式/裸码统一走 splitPrefixCode 取裸码部分，兼容本地 code 字段
+        const [, bare] = splitPrefixCode(kw);
+        const digits = bare.replace(/[^\dA-Za-z]/g, '');
+        const results = stockListService.isLoaded()
+          ? stockListService.search(kw, 8).length
+            ? stockListService.search(kw, 8)
+            : (digits && digits !== kw ? stockListService.search(digits, 8) : [])
+          : [];
+        setCodeSuggestions(results);
+      } catch {
+        setCodeSuggestions([]);
+      }
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [inputCode, showCodeSuggestions]);
+
+  const handleSelectSuggestion = (stock: Stock) => {
+    // 本地索引 symbol 已是后缀式(600000.SH)；market 为纯市场前缀(BJ/SH/SZ)时拼接得前缀式，
+    // 统一经 normalizeSymbol 归一为后缀式。优先直接用 symbol，避免 market 口径变化导致拼接错误。
+    const normalized = normalizeSymbol(stock.symbol || `${stock.market}${stock.code}`);
+    setShowCodeSuggestions(false);
+    setCodeSuggestions([]);
+    handleCommitSingleCode(normalized);
+  };
+
+  // ─────────────────────────────────────────────────────────────
+  // 截面推理：按当前市场加载注册模型（用户模型 + 系统模型）
+  // ─────────────────────────────────────────────────────────────
+  const loadRegisteredModels = useCallback(async () => {
+    setModelsLoading(true);
+    try {
+      const marketUpper = currentMarket.toUpperCase();
+      const [uRes, sList] = await Promise.all([
+        modelTrainingService.listUserModels(false, marketUpper).catch(() => ({ items: [], total: 0 })),
+        modelTrainingService.listSystemModels(marketUpper).catch(() => []),
+      ]);
+      const activeUser = (uRes.items || []).filter((m) => m.status !== 'archived');
+      const activeSys = (sList || []).map(systemModelToUserModel);
+      const combined = [...activeUser, ...activeSys];
+      setRegisteredModels(combined);
+
+      if (combined.length > 0) {
+        if (!selectedModelId || !combined.some((m) => m.model_id === selectedModelId)) {
+          const defaultM = combined.find((m) => m.is_default) || combined[0];
+          setSelectedModelId(defaultM.model_id);
+        }
+      } else if (selectedModelId) {
+        // 当前市场没有可用模型：清空选择，避免残留其他市场的模型
+        setSelectedModelId('');
+      }
+    } catch (err) {
+      console.error('加载注册模型失败:', err);
+    } finally {
+      setModelsLoading(false);
+    }
+  }, [selectedModelId, currentMarket]);
+
+  useEffect(() => {
+    void loadRegisteredModels();
+  }, [loadRegisteredModels]);
+
+  const selectedModel = useMemo(() => {
+    return registeredModels.find((m) => m.model_id === selectedModelId) || registeredModels[0] || null;
+  }, [registeredModels, selectedModelId]);
+
+  const horizonDays = useMemo(() => {
+    if (!selectedModel) return 5;
+    const meta = getMeta(selectedModel);
+    return Number(meta?.target_horizon_days ?? meta?.target_horizon ?? 5);
+  }, [selectedModel]);
+
+  // 截面推理：Precheck（基准日跟随后端的数据回退，避免输入框与实际数据日不一致）
+  const loadPrecheck = useCallback(async (modelId: string, checkDate?: string) => {
+    setInferencePrecheckLoading(true);
+    try {
+      const resp = await modelTrainingService.precheckInference(modelId, checkDate);
+      setInferencePrecheck(resp);
+      // 后端在请求日无数据时会自动回退到最新可用数据日（data_trade_date），
+      // 输入框必须同步，否则“行情基准日”显示的日期与实际推理用的数据日脱节。
+      // 预测目标 T+N 由 loadInferenceTargetDate 按回退后的基准日重算，这里不再复写。
+      const resolvedDataDate = resp?.data_trade_date;
+      if (resolvedDataDate && checkDate && resolvedDataDate !== checkDate) {
+        setInferenceDate(dayjs(resolvedDataDate));
+        message.info(`所选日期 ${checkDate} 无可用数据，已回退到最新数据日 ${resolvedDataDate}`);
+      }
+      return resp;
+    } catch {
+      setInferencePrecheck(null);
+      return null;
+    } finally {
+      setInferencePrecheckLoading(false);
+    }
+  }, []);
+
+  // 截面推理：目标日期
+  const loadInferenceTargetDate = useCallback(async () => {
+    if (!inferenceDate) {
+      setInferenceTargetDate('—');
+      return;
+    }
+    setInferenceTargetLoading(true);
+    try {
+      const base = inferenceDate.format('YYYY-MM-DD');
+      const resolved = await modelTrainingService.resolveInferenceDateByCalendar(marketConfig.calendar, base);
+      const predicted = await modelTrainingService.calcTargetDateByCalendar(marketConfig.calendar, resolved.date, horizonDays);
+      setInferenceTargetDate(predicted || '—');
+    } catch {
+      setInferenceTargetDate('—');
+    } finally {
+      setInferenceTargetLoading(false);
+    }
+  }, [inferenceDate, horizonDays, marketConfig.calendar]);
+
+  // 截面推理：历史与状态
+  const loadInferenceHistory = useCallback(async (
+    modelId: string,
+    options?: { runId?: string; status?: string; inferenceDate?: string; page?: number; pageSize?: number }
+  ) => {
+    setInferenceHistoryLoading(true);
+    try {
+      const resp = await modelTrainingService.listInferenceHistory(modelId, {
+        runId: options?.runId,
+        status: options?.status,
+        inferenceDate: options?.inferenceDate,
+        page: options?.page ?? 1,
+        pageSize: options?.pageSize ?? 20,
+      });
+      setInferenceHistory(resp.items);
+      if (lastInferenceRun === null) {
+        const firstCompleted = resp.items.find((r) => r.status === 'completed') ?? null;
+        setLastInferenceRun(firstCompleted);
+      }
+    } catch {
+      setInferenceHistory([]);
+    } finally {
+      setInferenceHistoryLoading(false);
+    }
+  }, [lastInferenceRun]);
+
+  const loadLatestInferenceRun = useCallback(async (modelId: string) => {
+    setLatestInferenceRunLoading(true);
+    try {
+      const latest = await modelTrainingService.getLatestInferenceRun(modelId);
+      setLatestInferenceRun(latest);
+    } catch {
+      setLatestInferenceRun(null);
+    } finally {
+      setLatestInferenceRunLoading(false);
+    }
+  }, []);
+
+  const refreshCrossSectionPanel = useCallback(async (modelId: string) => {
+    const currentDate = inferenceDate ? inferenceDate.format('YYYY-MM-DD') : undefined;
+    await Promise.all([
+      loadPrecheck(modelId, currentDate),
+      loadLatestInferenceRun(modelId),
+    ]);
+  }, [inferenceDate, loadLatestInferenceRun, loadPrecheck]);
+
+  useEffect(() => {
+    if (selectedModel && topTab === 'cross-section' && crossSectionMode === 'single') {
+      void refreshCrossSectionPanel(selectedModel.model_id);
+    }
+  }, [selectedModel?.model_id, topTab, crossSectionMode, inferenceDate, refreshCrossSectionPanel]);
+
+  useEffect(() => {
+    if (topTab === 'cross-section') {
+      void loadInferenceTargetDate();
+    }
+  }, [topTab, loadInferenceTargetDate]);
+
+  useEffect(() => {
+    if (selectedModel && topTab === 'cross-section' && crossSectionMode === 'single') {
+      void loadInferenceHistory(selectedModel.model_id, {
+        runId: historyRunIdFilter || undefined,
+        status: historyStatusFilter === 'all' ? undefined : historyStatusFilter,
+        inferenceDate: historyDateFilter ? historyDateFilter.format('YYYY-MM-DD') : undefined,
+        page: 1,
+        pageSize: 20,
+      });
+    }
+  }, [selectedModel?.model_id, topTab, crossSectionMode, historyRunIdFilter, historyStatusFilter, historyDateFilter, loadInferenceHistory]);
+
+  useEffect(() => {
+    setLastInferenceRun(null);
+  }, [selectedModel?.model_id]);
+
+  const handleRunCrossSectionInference = async () => {
+    if (!selectedModel || !inferenceDate) return;
+    setInferenceRunning(true);
+    setLastInferenceRun(null);
+    try {
+      const requestedDateStr = inferenceDate.format('YYYY-MM-DD');
+      const resolvedDate = await modelTrainingService.resolveInferenceDateByCalendar(marketConfig.calendar, requestedDateStr);
+      const inferenceDateStr = resolvedDate.date;
+      if (resolvedDate.adjusted && inferenceDateStr) {
+        setInferenceDate(dayjs(inferenceDateStr));
+        message.info(`所选日期 ${requestedDateStr} 非交易日，已自动回退到最近交易日 ${inferenceDateStr}`);
+      }
+      const precheck = await loadPrecheck(selectedModel.model_id, inferenceDateStr);
+      if (!precheck?.passed) {
+        message.error('前置检查未通过，请先处理阻断项');
+        return;
+      }
+      const runInfo = await modelTrainingService.runModelInference(selectedModel.model_id, inferenceDateStr, inferPoolRef ?? undefined);
+      setLastInferenceRun(runInfo);
+      message.success(`截面推理已完成: 产物已入库（样本数: ${runInfo.signals_count}${inferPoolName ? `，股票池: ${inferPoolName}` : ''}）`);
+      void refreshCrossSectionPanel(selectedModel.model_id);
+      void loadInferenceHistory(selectedModel.model_id);
+    } catch (err: any) {
+      message.error(`推理失败: ${err?.message ?? '未知错误'}`);
+    } finally {
+      setInferenceRunning(false);
+    }
+  };
+
+  const handleSetDefaultModel = async () => {
+    if (!selectedModel) return;
+    const canonicalId = selectedModel.model_id.startsWith('sys-') ? selectedModel.model_id.slice(4) : selectedModel.model_id;
+    try {
+      await modelTrainingService.setDefaultModel(canonicalId);
+      message.success(`已设为默认模型：${selectedModel.model_id}`);
+      await loadRegisteredModels();
+    } catch (err: any) {
+      message.error(`设置失败: ${err?.message ?? '未知'}`);
+    }
+  };
+
+  const handleDeleteHistory = async (runId: string) => {
+    if (!selectedModel) return;
+    try {
+      await modelTrainingService.deleteInferenceHistory(runId);
+      message.success('历史记录已删除');
+      void loadInferenceHistory(selectedModel.model_id);
+      void loadLatestInferenceRun(selectedModel.model_id);
+    } catch (err: any) {
+      message.error(`删除失败: ${err?.message ?? '未知错误'}`);
+    }
+  };
+
+  // ─────────────────────────────────────────────────────────────
+  // 个股推理中心：获取可用模型与执行真实预测
+  // ─────────────────────────────────────────────────────────────
+  useEffect(() => {
+    let cancelled = false;
+    setIndividualModelsLoading(true);
+    setAvailableModels([]);
+    setSingleStockModelId('');
+    setConsensusModelIds([]);
+    inferenceCenterService
+      .getAvailableModels(currentMarket)
+      .then((list) => {
+        if (cancelled) return;
+        const liveModels: ModelCardOption[] = (list || [])
+          .filter((m) => Boolean(m.modelId))
+          .map((m) => {
+          const kind = String(m.modelType || m.modelId || '').toLowerCase();
+          const isDL =
+            kind.includes('ensemble') || kind.includes('stacking') ? false :
+            kind.includes('tft') || kind.includes('gru') || kind.includes('lstm') ||
+            kind.includes('transformer') || kind.includes('pytorch') || kind.includes('tensorflow') ||
+            kind.includes('dl');
+          const isEns = kind.includes('ensemble') || kind.includes('stacking');
+          return {
+            ...m,
+            category: isEns ? 'ensemble' : isDL ? 'dl' : 'tree',
+            tag: m.hasInference ? '已训练' : '生产可用',
+            horizonDesc: 'T+1 ~ T+10 灵活周期',
+            sharpe: 0,
+            quantileSupport: false,
+          };
+        });
+        setAvailableModels(liveModels);
+        if (liveModels.length > 0) {
+          setSingleStockModelId(liveModels[0].modelId);
+          // 个股推理默认同时使用全部可用模型（最多 6 个，与后端上限一致）
+          setConsensusModelIds(liveModels.slice(0, MAX_CONSENSUS_MODELS).map((m) => m.modelId));
+        }
+      })
+      .catch((err) => {
+        console.warn('获取个股推理模型列表失败:', err);
+        if (!cancelled) {
+          setAvailableModels([]);
+          setSingleStockModelId('');
+          setConsensusModelIds([]);
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setIndividualModelsLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [currentMarket]);
+
+  const handleRunSingleStockInference = useCallback(async (
+    targetSymbol?: string,
+    targetModelId?: string,
+    targetHorizon?: number
+  ) => {
+    const sym = normalizeSymbol((targetSymbol || symbol || '600519.SH').trim());
+    // 主模型：显式指定 > 首个勾选模型；勾选的模型集合整体传给后端同时推理
+    const mId = targetModelId || singleStockModelId || consensusModelIds[0] || '';
+    const hor = targetHorizon || horizon;
+
+    if (!sym) {
+      message.warning('请输入有效的股票代码');
+      return;
+    }
+
+    setPrediction(null);
+    setSingleStockLoading(true);
+    try {
+      const dateStr = singleStockDate ? singleStockDate.format('YYYY-MM-DD') : undefined;
+      // K 线取 [基准日前100天, 最新] 全窗口：既覆盖基准日锚点，又能展示基准日后
+      // 实际走势对照预测；数字口径（基准价/扇形）仍按基准日截断，无前视泄露
+      const startStr = singleStockDate ? singleStockDate.subtract(100, 'day').format('YYYY-MM-DD') : undefined;
+      const klineData = await inferenceCenterService.getStockKline(sym, 60, undefined, startStr);
+      if (klineData && klineData.length > 0) {
+        setKline(klineData);
+      }
+
+      const res = await inferenceCenterService.predictSingleStock({
+        symbol: sym,
+        model_id: mId || undefined,
+        date: dateStr,
+        horizon: hor,
+        market: currentMarket,
+        consensus_model_ids: consensusModelIds.length ? consensusModelIds : undefined,
+        execute: Boolean(targetSymbol === undefined && targetModelId === undefined),
+      });
+
+      if (res && res.status === 'success') {
+        setPrediction(res);
+        // 所选日期无数据时后端会回退到最近数据日，明确提示避免误以为选中日期生效
+        if (dateStr && res.as_of_date && res.as_of_date !== dateStr) {
+          message.info(`所选 ${dateStr} 无可用数据，已回退到最近数据日 ${res.as_of_date}`);
+        }
+        if (!singleStockModelId && res.model_id) {
+          setSingleStockModelId(res.model_id);
+        }
+      }
+    } catch (e: any) {
+      console.error('获取真实推理数据失败:', e);
+      const apiMessage =
+        e?.response?.data?.detail ||
+        e?.response?.data?.error?.message ||
+        e?.response?.data?.message;
+      message.error(apiMessage || `推理接口异常: ${e?.message || '未知错误'}`);
+    } finally {
+      setSingleStockLoading(false);
+    }
+  }, [symbol, singleStockModelId, horizon, singleStockDate, currentMarket, consensusModelIds]);
+
+  const filteredSingleModels = useMemo(() => {
+    if (modelCategoryFilter === 'all') return availableModels;
+    return availableModels.filter((m) => m.category === modelCategoryFilter);
+  }, [availableModels, modelCategoryFilter]);
+
+  const currentSelectedSingleModel = useMemo(() => {
+    return availableModels.find((m) => m.modelId === singleStockModelId) || availableModels[0];
+  }, [availableModels, singleStockModelId]);
+
+  // 勾选/取消模型：已勾选集合即本次个股推理同时使用的模型（最多 6 个）
+  const toggleConsensusModel = useCallback((modelId: string) => {
+    if (consensusModelIds.includes(modelId)) {
+      const next = consensusModelIds.filter((id) => id !== modelId);
+      setConsensusModelIds(next);
+      if (singleStockModelId === modelId) {
+        setSingleStockModelId(next[0] || '');
+      }
+      return;
+    }
+    if (consensusModelIds.length >= MAX_CONSENSUS_MODELS) {
+      message.warning(`最多同时使用 ${MAX_CONSENSUS_MODELS} 个模型`);
+      return;
+    }
+    const next = [...consensusModelIds, modelId];
+    setConsensusModelIds(next);
+    if (!singleStockModelId) setSingleStockModelId(modelId);
+  }, [consensusModelIds, singleStockModelId]);
+
+  const handleCommitSingleCode = (raw: string) => {
+    if (!raw.trim()) return;
+    const normalized = normalizeSymbol(raw.trim());
+    setSymbol(normalized);
+    setInputCode(normalized);
+    handleRunSingleStockInference(normalized);
+  };
+
+  return (
+    <div className="w-full h-full bg-[#f8fafc] p-6 flex flex-col overflow-hidden box-border select-none" style={{ fontFamily: "'Microsoft YaHei', '微软雅黑', 'PingFang SC', 'Hiragino Sans GB', sans-serif" }}>
+      {/* 顶部主切换栏 */}
+      <div className="flex items-center justify-between bg-white border border-gray-200 rounded-2xl px-6 h-[68px] mb-4 shadow-2xs shrink-0">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-blue-200">
+            <Cpu className="w-5 h-5" />
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <h1 className="text-base font-black text-slate-800 m-0 tracking-tight">模型推理中心</h1>
+              <Tag color="blue" className="rounded-full text-xs font-bold border-0 px-2 py-0">
+                {marketConfig.label}市场
+              </Tag>
+            </div>
+            <p className="text-xs text-slate-700 m-0">生产级截面批量打分 · 单标的特征归因与共识走势预测</p>
+          </div>
+        </div>
+
+        {/* 顶部一级模式切换 */}
+        <div className="flex items-center bg-slate-100/80 p-1 rounded-xl border border-slate-200/60">
+          <button
+            type="button"
+            onClick={() => setTopTab('cross-section')}
+            className={clsx(
+              'flex items-center gap-2 px-5 py-1.5 rounded-lg text-xs font-bold transition-all',
+              topTab === 'cross-section'
+                ? 'bg-white text-blue-600 shadow-sm border border-slate-200/50'
+                : 'text-slate-700 hover:text-slate-900'
+            )}
+          >
+            <LayoutGrid size={14} />
+            市场截面推理
+          </button>
+          <button
+            type="button"
+            onClick={() => setTopTab('individual')}
+            className={clsx(
+              'flex items-center gap-2 px-5 py-1.5 rounded-lg text-xs font-bold transition-all',
+              topTab === 'individual'
+                ? 'bg-white text-blue-600 shadow-sm border border-slate-200/50'
+                : 'text-slate-700 hover:text-slate-900'
+            )}
+          >
+            <TrendingUp size={14} />
+            个股推理中心
+          </button>
+        </div>
+      </div>
+
+      {/* ================= 模式 1：市场截面推理 ================= */}
+      {topTab === 'cross-section' && (
+        <div className="flex-1 min-h-0 bg-white border border-gray-200 shadow-sm rounded-[28px] flex flex-col overflow-hidden">
+          {/* 模型选择与二级导航 Bar（含股票池；整体下移 30px） */}
+          <div className="px-6 h-[68px] border-b border-gray-200 bg-slate-50/50 flex flex-wrap items-center justify-between gap-4 shrink-0 mt-[30px]">
+            {/* 模型选择 */}
+            <div className="flex items-center gap-2.5">
+              <span className="text-xs font-bold text-slate-700 flex items-center gap-1.5 whitespace-nowrap">
+                <Database size={14} className="text-blue-600" />
+                当前推理模型
+              </span>
+              <div className="flex items-center bg-white border border-slate-200 rounded-xl px-2 h-9 shadow-sm">
+                <Select
+                  value={selectedModelId || undefined}
+                  placeholder={modelsLoading ? '加载中…' : `暂无${marketConfig.label}模型`}
+                  onChange={setSelectedModelId}
+                  loading={modelsLoading}
+                  allowClear={false}
+                  notFoundContent={modelsLoading ? <Spin size="small" /> : `当前市场暂无可用模型`}
+                  variant="borderless"
+                  className="!w-80 [&_.ant-select-selection-item]:text-[13px] [&_.ant-select-selection-item]:font-bold [&_.ant-select-selection-item]:text-slate-800"
+                  options={registeredModels.map((m) => ({
+                    value: m.model_id,
+                    label: (
+                      <div className="flex items-center justify-between text-[13px]">
+                        <span className="font-semibold truncate">{modelDisplayName(m)}</span>
+                        {m.is_default && (
+                          <Tag color="gold" className="!mr-0 text-xs">默认</Tag>
+                        )}
+                      </div>
+                    ),
+                  }))}
+                />
+              </div>
+              {selectedModel && (
+                <div className="flex items-center gap-2">
+                  <div className="bg-slate-50 border border-slate-200 rounded-xl px-3 h-9 flex items-center gap-1.5 whitespace-nowrap">
+                    <span className="text-xs font-bold text-slate-700">架构</span>
+                    <span className="text-[13px] font-black text-slate-900 font-mono">{extractModelType(selectedModel)}</span>
+                  </div>
+                  <div className="bg-slate-50 border border-slate-200 rounded-xl px-3 h-9 flex items-center gap-1.5 whitespace-nowrap">
+                    <span className="text-xs font-bold text-slate-700">目标</span>
+                    <span className="text-[13px] font-black text-blue-700 font-mono">T+{horizonDays}</span>
+                  </div>
+                  {/* 单日推理股票池：仅裁信号范围，不进 pred.parquet */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (!inferPoolRef) setInferPoolPickerOpen(true);
+                      else {
+                        setInferPoolRef(null);
+                        setInferPoolName('');
+                        setInferPoolId(null);
+                      }
+                    }}
+                    title={inferPoolRef ? `股票池: ${inferPoolName || inferPoolRef}（点击恢复全市场）` : '全市场（点击选择股票池）'}
+                    className={clsx(
+                      'border rounded-xl px-3 h-9 flex items-center gap-1.5 whitespace-nowrap transition-colors',
+                      inferPoolRef ? 'bg-blue-50 border-blue-300' : 'bg-slate-50 border-slate-200 hover:border-blue-200'
+                    )}
+                  >
+                    <Layers size={12} className={inferPoolRef ? 'text-blue-600' : 'text-slate-400'} />
+                    <span className="text-xs font-bold text-slate-700">股票池</span>
+                    <span className={clsx('text-[13px] font-black max-w-[160px] truncate', inferPoolRef ? 'text-blue-700' : 'text-slate-500')}>
+                      {inferPoolRef ? (inferPoolName || inferPoolRef) : '全市场'}
+                    </span>
+                  </button>
+                  {inferPoolRef && (
+                    <button
+                      type="button"
+                      onClick={() => setInferPoolPickerOpen(true)}
+                      title="更换股票池"
+                      className="border border-blue-200 bg-white rounded-xl px-2 h-9 flex items-center whitespace-nowrap text-xs font-bold text-blue-600 hover:bg-blue-50 transition-colors"
+                    >
+                      更换
+                    </button>
+                  )}
+                  <div className={clsx(
+                    'border rounded-xl px-3 h-9 flex items-center whitespace-nowrap',
+                    selectedModel.is_default ? 'bg-amber-50 border-amber-200' : 'bg-slate-50 border-slate-200'
+                  )}>
+                    {selectedModel.is_default ? (
+                      <span className="text-xs font-bold text-amber-600 flex items-center gap-1">
+                        <Star size={12} fill="currentColor" /> 默认生效
+                      </span>
+                    ) : (
+                      <span className="text-xs text-slate-600">非默认模型</span>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* 子模式切换 */}
+            <div className="flex items-center gap-2">
+              <Button
+                size="small"
+                type={crossSectionMode === 'single' ? 'primary' : 'default'}
+                className={clsx('rounded-xl text-xs font-bold h-8 px-4', crossSectionMode === 'single' ? 'bg-blue-600 border-blue-600' : 'border-slate-200')}
+                onClick={() => setCrossSectionMode('single')}
+              >
+                单日推理
+              </Button>
+              <Button
+                size="small"
+                type={crossSectionMode === 'history' ? 'primary' : 'default'}
+                className={clsx('rounded-xl text-xs font-bold h-8 px-4', crossSectionMode === 'history' ? 'bg-indigo-600 border-indigo-600' : 'border-slate-200')}
+                onClick={() => setCrossSectionMode('history')}
+              >
+                推理历史
+              </Button>
+            </div>
+          </div>
+
+          {/* 截面主体展示区 */}
+          <div className="flex-1 min-h-0 p-6 overflow-y-auto custom-scrollbar">
+            {modelsLoading ? (
+              <div className="flex h-full items-center justify-center">
+                <Spin tip="正在加载推理模型…" />
+              </div>
+            ) : !selectedModel ? (
+              <div className="flex h-full flex-col items-center justify-center gap-4 text-center px-6">
+                <Empty
+                  image={Empty.PRESENTED_IMAGE_SIMPLE}
+                  description={
+                    <div className="space-y-1">
+                      <p className="text-sm font-bold text-slate-600 m-0">
+                        当前市场暂无可用模型（{marketConfig.label}）
+                      </p>
+                      <p className="text-xs text-slate-400 m-0">
+                        请先在本市场训练/注册模型，或切换回已有模型的市场
+                      </p>
+                    </div>
+                  }
+                />
+                <div className="flex items-center gap-2">
+                  <Button
+                    type="primary"
+                    className="rounded-xl font-bold text-xs"
+                    onClick={() => navigate('/model-training')}
+                  >
+                    去训练模型
+                  </Button>
+                  <Button
+                    className="rounded-xl font-bold text-xs"
+                    onClick={() => navigate('/model-hub')}
+                  >
+                    模型广场
+                  </Button>
+                </div>
+              </div>
+            ) : crossSectionMode === 'single' ? (
+              <InferenceCenterPanel
+                model={selectedModel}
+                inferenceDate={inferenceDate}
+                onDateChange={setInferenceDate}
+                targetDate={inferenceTargetDate}
+                targetDateLoading={inferenceTargetLoading}
+                horizonDays={horizonDays}
+                running={inferenceRunning}
+                onRun={handleRunCrossSectionInference}
+                onRunAsDefault={handleSetDefaultModel}
+                isDefault={selectedModel.is_default}
+                defaultModel={registeredModels.find((m) => m.is_default) ?? null}
+                lastRun={lastInferenceRun}
+                history={inferenceHistory}
+                historyLoading={inferenceHistoryLoading}
+                latestInferenceRun={latestInferenceRun}
+                latestInferenceRunLoading={latestInferenceRunLoading}
+                precheck={inferencePrecheck}
+                precheckLoading={inferencePrecheckLoading}
+                onRefreshPrecheck={() => {
+                  if (selectedModel) {
+                    void loadPrecheck(selectedModel.model_id, inferenceDate?.format('YYYY-MM-DD'));
+                  }
+                }}
+                historyRunIdFilter={historyRunIdFilter}
+                onHistoryRunIdFilterChange={setHistoryRunIdFilter}
+                historyStatusFilter={historyStatusFilter}
+                onHistoryStatusFilterChange={setHistoryStatusFilter}
+                historyDateFilter={historyDateFilter}
+                onHistoryDateFilterChange={setHistoryDateFilter}
+                onDeleteHistory={handleDeleteHistory}
+              />
+            ) : (
+              <InferenceHistoryPanel modelId={selectedModel.model_id} onDelete={handleDeleteHistory} />
+            )}
+            <StockPoolPickerModal
+              open={inferPoolPickerOpen}
+              onClose={() => setInferPoolPickerOpen(false)}
+              selectedPoolId={inferPoolId}
+              market={currentMarket}
+              title="推理股票池"
+              onSelect={(pool: StockPoolOption) => {
+                setInferPoolRef(`pool:${pool.code}`);
+                setInferPoolName(pool.name);
+                setInferPoolId(pool.pool_id);
+                setInferPoolPickerOpen(false);
+              }}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* ================= 模式 2：个股推理中心 ================= */}
+      {topTab === 'individual' && (
+        <div className="flex-1 min-h-0 bg-white border border-gray-200 shadow-sm rounded-[28px] flex overflow-hidden">
+          {/* 左侧：个股参数配置 */}
+          <div className="w-80 shrink-0 flex flex-col border-r border-gray-200 bg-white p-5 overflow-y-auto custom-scrollbar">
+            <div className="flex items-center justify-between pb-3.5 border-b border-slate-100 mb-4 px-1">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600">
+                  <Sliders className="w-4 h-4" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-black text-slate-800 m-0">个股预测配置</h3>
+                  <p className="text-[10px] text-slate-600 m-0">目标代码 · 预测周期 · 模型选型</p>
+                </div>
+              </div>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.8)]" />
+            </div>
+
+            <div className="flex flex-col gap-3.5 mb-4 flex-1 min-h-0">
+              {/* 目标个股 */}
+              <div className="flex flex-col gap-1.5">
+                <span className="text-[11px] font-bold text-slate-700 flex items-center gap-1">
+                  <Search className="w-3.5 h-3.5 text-blue-500" /> 目标代码
+                </span>
+                <div className="relative">
+                  <div className="flex items-center bg-slate-50/70 border border-slate-200 hover:border-blue-400 focus-within:border-blue-500 focus-within:bg-white focus-within:ring-2 focus-within:ring-blue-100 rounded-xl px-3 py-1.5 transition-all shadow-2xs">
+                    <Input
+                      variant="borderless"
+                      placeholder="输入代码/名称搜索 (如 600036 或 茅台)"
+                      value={inputCode}
+                      onChange={(e) => {
+                        setInputCode(e.target.value.toUpperCase());
+                        setShowCodeSuggestions(true);
+                      }}
+                      onFocus={() => setShowCodeSuggestions(true)}
+                      onBlur={() => {
+                        // 延迟提交，给下拉项的 click 留出触发窗口
+                        window.setTimeout(() => {
+                          setShowCodeSuggestions(false);
+                          handleCommitSingleCode(inputCode);
+                        }, 160);
+                      }}
+                      onPressEnter={() => handleCommitSingleCode(inputCode)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Escape') setShowCodeSuggestions(false);
+                      }}
+                      className="p-0 font-mono font-bold text-sm text-blue-600 focus:outline-none"
+                      style={{ flex: 1, minWidth: 100, padding: 0 }}
+                    />
+                    <div className="flex items-center gap-1 pl-2 border-l border-slate-200 shrink-0">
+                      <span className="text-xs font-bold text-slate-700 select-none">
+                        {prediction?.stock_name || '标的资产'}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* 联想下拉：本地股票列表内存搜索 */}
+                  {showCodeSuggestions && codeSuggestions.length > 0 && (
+                    <div className="absolute z-50 left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-xl shadow-lg max-h-60 overflow-y-auto custom-scrollbar">
+                      {codeSuggestions.map((s) => (
+                        <div
+                          key={s.symbol}
+                          // 阻止 mousedown 抢先触发输入框 onBlur 提交
+                          onMouseDown={(e) => e.preventDefault()}
+                          onClick={() => handleSelectSuggestion(s)}
+                          className="px-3 py-2 hover:bg-blue-50 cursor-pointer border-b border-slate-50 last:border-b-0 flex items-center justify-between gap-2"
+                        >
+                          <span className="text-xs font-bold text-slate-700 truncate">
+                            {s.name || s.code}
+                          </span>
+                          <span className="text-[11px] font-mono text-blue-600 shrink-0">
+                            {normalizeSymbol(s.symbol || `${s.market}${s.code}`)}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* 预测周期 */}
+              <div className="flex flex-col gap-1.5">
+                <span className="text-[11px] font-bold text-slate-700 flex items-center gap-1">
+                  <Clock className="w-3.5 h-3.5 text-indigo-500" /> 预测周期 (Horizon)
+                </span>
+                <Select
+                  value={horizon}
+                  onChange={(val) => setHorizon(val)}
+                  style={{ width: '100%', height: 34 }}
+                  options={[
+                    { label: 'T+1 次日预期', value: 1 },
+                    { label: 'T+3 短线周期', value: 3 },
+                    { label: 'T+5 一周趋势 (推荐)', value: 5 },
+                    { label: 'T+10 双周展望', value: 10 },
+                  ]}
+                />
+              </div>
+
+              {/* 基准日期 */}
+              <div className="flex flex-col gap-1.5">
+                <span className="text-[11px] font-bold text-slate-700 flex items-center gap-1">
+                  <Calendar className="w-3.5 h-3.5 text-amber-500" /> 基准日期 (支持盲测)
+                </span>
+                <DatePicker
+                  value={singleStockDate}
+                  onChange={(d) => setSingleStockDate(d)}
+                  style={{ width: '100%', height: 34, borderRadius: 10 }}
+                  allowClear={false}
+                />
+                {prediction?.as_of_date && singleStockDate &&
+                  prediction.as_of_date !== singleStockDate.format('YYYY-MM-DD') && (
+                  <span className="text-[10px] text-amber-600 font-semibold leading-tight">
+                    实际数据日：{prediction.as_of_date}（所选日期无数据已回退）
+                  </span>
+                )}
+              </div>
+
+              {/* 模型选型 */}
+              <div className="flex flex-col gap-1.5 flex-1 min-h-[220px]">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-bold text-slate-700 flex items-center gap-1">
+                    <Database className="w-3.5 h-3.5 text-purple-500" /> 模型选型
+                    <Tooltip title={`勾选参与本次个股推理的模型，将同时执行推理（最多 ${MAX_CONSENSUS_MODELS} 个，首个为主模型）`}>
+                      <span className="ml-1 text-[10px] font-mono font-bold text-blue-600 bg-blue-50 px-1.5 py-0.2 rounded-md border border-blue-100 cursor-help">
+                        {consensusModelIds.length}/{MAX_CONSENSUS_MODELS}
+                      </span>
+                    </Tooltip>
+                  </span>
+                  <div className="flex items-center gap-1 bg-slate-200/70 p-0.5 rounded-lg text-[11px]">
+                    {(['all', 'dl', 'tree'] as const).map((cat) => (
+                      <button
+                        key={cat}
+                        type="button"
+                        onClick={() => setModelCategoryFilter(cat)}
+                        className={clsx(
+                          'px-2 py-0.5 rounded-md font-bold transition-all',
+                          modelCategoryFilter === cat ? 'bg-white text-blue-700 shadow-2xs' : 'text-slate-700 hover:text-slate-900'
+                        )}
+                      >
+                        {cat === 'all' ? '全部' : cat === 'dl' ? '深度' : '树模'}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2 flex-1 min-h-0 overflow-y-auto custom-scrollbar pr-0.5">
+                  {individualModelsLoading ? (
+                    <div className="flex flex-1 items-center justify-center py-10">
+                      <Spin size="small" />
+                    </div>
+                  ) : filteredSingleModels.length === 0 ? (
+                    <div className="flex flex-1 flex-col items-center justify-center gap-2 py-8 px-2 text-center">
+                      <Empty
+                        image={Empty.PRESENTED_IMAGE_SIMPLE}
+                        description={
+                          <span className="text-xs text-slate-500">
+                            当前市场暂无可用模型（{marketConfig.label}）
+                          </span>
+                        }
+                      />
+                      <Button
+                        size="small"
+                        type="link"
+                        className="text-xs font-bold"
+                        onClick={() => navigate('/model-training')}
+                      >
+                        去训练模型
+                      </Button>
+                    </div>
+                  ) : (
+                  filteredSingleModels.map((m) => {
+                    const isSelected = consensusModelIds.includes(m.modelId);
+                    const isMain = isSelected && (singleStockModelId || consensusModelIds[0]) === m.modelId;
+                    return (
+                      <div
+                        key={m.modelId}
+                        onClick={() => toggleConsensusModel(m.modelId)}
+                        className={clsx(
+                          'p-2.5 rounded-xl border transition-all cursor-pointer flex flex-col gap-1',
+                          isSelected
+                            ? 'bg-blue-50/80 border-blue-400 ring-2 ring-blue-100 shadow-xs'
+                            : 'bg-white border-slate-300 hover:bg-slate-50 hover:border-slate-400'
+                        )}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className={clsx('text-[13px] font-black truncate', isSelected ? 'text-blue-800' : 'text-slate-900')}>
+                            {m.modelName}
+                          </span>
+                          <span className="flex items-center gap-1 shrink-0">
+                            {isMain && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded bg-blue-600 text-white">主</span>
+                            )}
+                            <span className="text-[10px] font-bold font-mono px-1.5 py-0.2 rounded bg-slate-100 border border-slate-300 text-slate-700">
+                              {m.tag}
+                            </span>
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-between text-[11px] font-semibold text-slate-700">
+                          <span>{m.horizonDesc}</span>
+                          {isSelected && <CheckCircle2 size={12} className="text-blue-600 shrink-0" />}
+                        </div>
+                      </div>
+                    );
+                  })
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-auto pt-3 border-t border-slate-100">
+              <Button
+                type="primary"
+                block
+                icon={<Play size={15} fill="currentColor" />}
+                loading={singleStockLoading}
+                disabled={consensusModelIds.length === 0 || individualModelsLoading}
+                onClick={() => handleRunSingleStockInference()}
+                style={{
+                  height: 40,
+                  borderRadius: 12,
+                  fontWeight: 800,
+                  fontSize: 13,
+                  background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+                  boxShadow: '0 4px 14px rgba(37, 99, 235, 0.28)',
+                }}
+              >
+                {consensusModelIds.length > 1
+                  ? `开始个股推理（同时 ${consensusModelIds.length} 个模型）`
+                  : '开始个股推理'}
+              </Button>
+            </div>
+          </div>
+
+          {/* 右侧：预测结果与图表 */}
+          <div className="flex-1 min-w-0 flex flex-col bg-gray-50/50 overflow-hidden">
+            {prediction ? (
+              <div className="bg-white px-6 py-3.5 border-b border-gray-200 flex items-center justify-between shrink-0 z-10">
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg font-black text-slate-800 tracking-tight">
+                      {prediction.stock_name}
+                    </span>
+                    <span className="text-xs font-mono font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-lg border border-blue-100/80">
+                      {prediction.symbol}
+                    </span>
+                  </div>
+                  <div className="h-5 w-[1px] bg-slate-200" />
+                  <div className="flex items-baseline gap-1.5 font-mono">
+                    <span className="text-xs text-slate-600 font-medium">基准价格</span>
+                    <span className="text-base font-black text-slate-900">
+                      ¥{prediction.current_price ? prediction.current_price.toFixed(2) : '—'}
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-1.5 text-xs text-slate-700 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200">
+                    <span>模型信号分数:</span>
+                    <strong className={clsx('font-mono font-black', prediction.expected_return >= 0 ? 'text-rose-600' : 'text-emerald-600')}>
+                      {prediction.predicted_score.toFixed(4)}
+                    </strong>
+                  </div>
+                  <div className="flex items-center gap-1.5 bg-rose-50/70 border border-rose-100 px-3 py-1 rounded-xl">
+                    <span className="text-[11px] text-slate-700 font-semibold">来源:</span>
+                    <span className="text-xs font-black font-mono text-rose-600">真实推理</span>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="bg-white px-6 py-4 border-b border-gray-200 flex items-center justify-between shrink-0 z-10">
+                <span className="text-sm text-slate-600 font-semibold">请在左侧选择标的并点击「开始个股推理」</span>
+              </div>
+            )}
+
+            <div className="flex-1 min-h-0 p-4 flex flex-col gap-3 overflow-hidden">
+              {singleStockLoading && !prediction ? (
+                <div className="flex-1 flex flex-col items-center justify-center gap-3 bg-white rounded-2xl border border-gray-200 shadow-xs min-h-[300px]">
+                  <Spin size="large" />
+                  <span className="text-xs font-semibold text-slate-600">正在接入真实推理引擎与行情...</span>
+                </div>
+              ) : prediction ? (
+                <div className="flex-1 min-h-0 flex flex-col gap-3 overflow-hidden">
+                  {prediction.forecast_warning && (
+                    <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs font-semibold text-amber-800">
+                      {prediction.forecast_warning}
+                    </div>
+                  )}
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 shrink-0" style={{ height: '360px', minHeight: '360px' }}>
+                    <div className="lg:col-span-2 bg-white rounded-2xl border border-gray-200 shadow-xs flex flex-col overflow-hidden">
+                      <StockForecastChart
+                        kline={kline}
+                        forecast={prediction.forecast_curve}
+                        symbol={prediction.symbol}
+                        stockName={prediction.stock_name}
+                        currentPrice={prediction.current_price}
+                        modelName={prediction.model_name || currentSelectedSingleModel?.modelName}
+                        asOfDate={prediction.as_of_date}
+                      />
+                    </div>
+
+                    <div className="bg-white rounded-2xl p-5 border border-gray-200 shadow-xs flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center justify-between pb-2.5 border-b border-slate-100 mb-3">
+                          <span className="text-xs font-bold text-slate-700">模型推理指标</span>
+                          <Tag color="blue" className="rounded font-mono text-[10px] m-0">Persisted Model Score</Tag>
+                        </div>
+
+                        <div className="p-3.5 bg-slate-50/80 rounded-2xl border border-slate-200/80 mb-3 text-center">
+                          <span className="text-[11px] text-slate-600 font-semibold block mb-0.5">模型信号分数</span>
+                          <span className={clsx('text-2xl font-black font-mono', prediction.expected_return >= 0 ? 'text-rose-600' : 'text-emerald-600')}>
+                            {prediction.predicted_score.toFixed(4)}
+                          </span>
+                        </div>
+
+                        <div className="p-3.5 bg-gradient-to-br from-slate-50 to-blue-50/30 rounded-2xl border border-slate-200/80">
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-xs font-bold text-slate-700">分位数区间</span>
+                            <Tooltip title={prediction.p10_return != null && prediction.p90_return != null ? '真实 LightGBM 分位回归结果，区间已按验证集校准。' : '当前注册模型未启用分位推理，因此不展示估算区间。'}>
+                              <Sparkles className="w-3.5 h-3.5 text-slate-600 cursor-pointer" />
+                            </Tooltip>
+                          </div>
+                          {prediction.p10_return != null && prediction.p90_return != null ? (
+                            <>
+                              <div className="grid grid-cols-3 gap-2 text-center">
+                                <div><div className="text-[10px] text-emerald-600">P10 下界</div><div className="font-mono text-xs font-bold text-emerald-700">{prediction.p10_return.toFixed(2)}%</div></div>
+                                <div><div className="text-[10px] text-blue-600">P50 中枢</div><div className="font-mono text-xs font-bold text-blue-700">{(prediction.p50_return ?? 0).toFixed(2)}%</div></div>
+                                <div><div className="text-[10px] text-rose-600">P90 上界</div><div className="font-mono text-xs font-bold text-rose-700">{prediction.p90_return.toFixed(2)}%</div></div>
+                              </div>
+                              <p className="mt-2 text-[10px] text-slate-600 m-0">验证集校准覆盖率：{prediction.confidence > 0 ? `${(prediction.confidence * 100).toFixed(1)}%` : '—'}</p>
+                            </>
+                          ) : (
+                            <p className="text-[11px] leading-relaxed text-slate-600 m-0">该模型未启用分位推理；当前仅提供真实信号分数。</p>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className="pt-2.5 border-t border-slate-100 text-[11px] text-slate-600 flex items-center justify-between">
+                        <span>模型准确率 (IC): <strong className="text-slate-700 font-mono">{currentSelectedSingleModel?.accuracy != null && currentSelectedSingleModel.accuracy !== 0 ? (typeof currentSelectedSingleModel.accuracy === 'number' ? currentSelectedSingleModel.accuracy.toFixed(3) : currentSelectedSingleModel.accuracy) : '—'}</strong></span>
+                        <span>绩效指标: <strong className="text-slate-700 font-mono">以注册信息为准</strong></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 归因面板与多模型分数卡并排：/research/predict-stock 一直在返回 drivers /
+                      drivers_source，此前没有任何组件渲染它（FeatureDriversPanel 建好却无人引用），
+                      等于后端的 SHAP 归因白算。此处接回。 */}
+                  <div className="flex-1 min-h-0 grid grid-cols-1 xl:grid-cols-2 gap-3 overflow-y-auto xl:overflow-hidden custom-scrollbar">
+                    <div className="bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden min-h-0">
+                      <FeatureDriversPanel
+                        drivers={prediction.drivers ?? []}
+                        source={prediction.drivers_source}
+                      />
+                    </div>
+
+                    <div className="bg-white rounded-2xl border border-gray-200 shadow-xs overflow-hidden min-h-0">
+                      <ModelScoreCurveGrid
+                        consensus={prediction.consensus}
+                        consensusScore={prediction.consensus_score}
+                        selectedCount={consensusModelIds.length}
+                        suffixSymbol={toSuffixCode(prediction.symbol || symbol)}
+                        asOfDate={prediction.as_of_date}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex-1 flex flex-col items-center justify-center gap-3 bg-white rounded-2xl border border-dashed border-gray-200 text-slate-600 min-h-[300px]">
+                  <Database size={28} className="opacity-30" />
+                  <span className="text-xs font-semibold">请在左侧配置参数并点击「开始个股推理」查看多维量化分析</span>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default InferenceCenterPage;

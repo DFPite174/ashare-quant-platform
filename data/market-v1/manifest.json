@@ -1,0 +1,400 @@
+{
+  "research_fingerprint": "4b139947ca0512a620b69652660317f757818b20c389bc14c09b5cb4357b4ded",
+  "strict_pit": false,
+  "raw_requests": 2031,
+  "securities": 200,
+  "sessions": 484,
+  "first": "2023-01-03",
+  "last": "2024-12-31",
+  "tables": {
+    "security_days": 96800,
+    "bars_unadjusted": 85981,
+    "corporate_actions": 312,
+    "suspension_events": 824,
+    "industry_intervals": 270,
+    "financial_events": 15513,
+    "benchmark_price": 484,
+    "benchmark_weights_monthly": 7500,
+    "security_master": 200
+  },
+  "unit_check_max_error": {
+    "open": 0.0,
+    "high": 0.0,
+    "low": 0.0,
+    "close": 0.0,
+    "volume": 5.960464477539063e-08,
+    "amount": 4.76837158203125e-07,
+    "adj_factor": 0.0,
+    "total_mv": 0.000244140625
+  },
+  "status": {
+    "OBSERVED_BAR": 85959,
+    "PRE_LISTING": 5282,
+    "DELISTED": 4782,
+    "FULL_DAY_SUSPENSION": 755,
+    "OBSERVED_INTRADAY_HALT": 22
+  },
+  "missing_bar_reason": {
+    "FULL_DAY_SUSPENSION": 755
+  },
+  "eligible_unknown_limit": 0,
+  "eligible_ambiguous_or_missing_industry": 12,
+  "actions_requiring_review": 48,
+  "quarantined_financial_fields": [
+    {
+      "asset": "000936.SZ",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "000936.SZ",
+      "field": "net_margin"
+    },
+    {
+      "asset": "000936.SZ",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "000936.SZ",
+      "field": "roa"
+    },
+    {
+      "asset": "000936.SZ",
+      "field": "roe"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "current_ratio"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "net_margin"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "roa"
+    },
+    {
+      "asset": "002100.SZ",
+      "field": "roe"
+    },
+    {
+      "asset": "002296.SZ",
+      "field": "roa"
+    },
+    {
+      "asset": "002563.SZ",
+      "field": "roa"
+    },
+    {
+      "asset": "300225.SZ",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "300225.SZ",
+      "field": "net_margin"
+    },
+    {
+      "asset": "300225.SZ",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "300266.SZ",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "300266.SZ",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "300266.SZ",
+      "field": "net_margin"
+    },
+    {
+      "asset": "300266.SZ",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "300266.SZ",
+      "field": "roa"
+    },
+    {
+      "asset": "300266.SZ",
+      "field": "roe"
+    },
+    {
+      "asset": "300448.SZ",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "300448.SZ",
+      "field": "net_margin"
+    },
+    {
+      "asset": "300448.SZ",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "600110.SH",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "600110.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "600110.SH",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "600509.SH",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "600509.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "600509.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "600509.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "600509.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "current_ratio"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "600532.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "600549.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "600549.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "600653.SH",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "600653.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "600653.SH",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "current_ratio"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "600746.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "601059.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "current_ratio"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "601118.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "601555.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "601615.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "601615.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "601696.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "current_ratio"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "603003.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "605337.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "688201.SH",
+      "field": "debt_to_assets"
+    },
+    {
+      "asset": "688201.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "688201.SH",
+      "field": "profit_growth_yoy"
+    },
+    {
+      "asset": "688201.SH",
+      "field": "roa"
+    },
+    {
+      "asset": "688201.SH",
+      "field": "roe"
+    },
+    {
+      "asset": "688260.SH",
+      "field": "gross_margin"
+    },
+    {
+      "asset": "688260.SH",
+      "field": "net_margin"
+    },
+    {
+      "asset": "688260.SH",
+      "field": "revenue_growth_yoy"
+    },
+    {
+      "asset": "688536.SH",
+      "field": "roa"
+    }
+  ],
+  "benchmark_months": 25,
+  "benchmark_min_members": 300,
+  "sha256": {
+    "bars_unadjusted.parquet": "39cbd97b4832983288f197fb9886aeaa26706e445c29172196d85733aef0e5eb",
+    "benchmark_price.parquet": "fe39194b231793205901253bbe754622f8b18e23ffd1037cf84b9dcb710fc3f8",
+    "benchmark_weights_monthly.parquet": "d5bb7067936f3b883d71bfcde32349d7aaf0a0e42f213c1e8b869bc05d3b0f18",
+    "corporate_actions.parquet": "20b024117a324d4007fd09bb65d2d1561659c2a6692d1c905456ec5fe6cf7edf",
+    "financial_events.parquet": "49d709babda207b7731823c3124f0402382773885cf700236ff69531660f7afe",
+    "industry_intervals.parquet": "92cebab9487b72721d835d597e188a4d13a9496cd9195a880d50261eb0baaa95",
+    "missing_bars.csv": "59f965ada7836e32387f7e9f0cd5c36a5a847eab908691ceb80d0116c8f42df9",
+    "security_days.parquet": "f8fca746382645a9f118c5649131882affa716eb0b297699cbf3a4a792211a9f",
+    "security_master.parquet": "d6e0caf7633e73bb8095a9cccac265b5830f310dd4be956029e6dc1a9bdea716",
+    "source_index.json": "b0c8cc404572395a156a0804bfa012e5af1d44a34666b89458309c2fec1664b8",
+    "suspension_events.parquet": "eeae915025f185d19c381198ab3e4398b9c060a2aee7473f6c74e9574550fde0"
+  }
+}

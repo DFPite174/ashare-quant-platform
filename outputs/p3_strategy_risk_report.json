@@ -1,0 +1,27 @@
+{
+  "phase": "P3",
+  "timestamp": "2026-11-09T11:08:31.057561",
+  "status": "PASS",
+  "policy_limits": {
+    "cash_floor": 0.05,
+    "name_cap": 0.1,
+    "industry_cap": 0.3,
+    "adv_fraction": 0.05,
+    "fee_buffer": 0.001
+  },
+  "verification_metrics": {
+    "weeks": 97,
+    "total_targets": 970,
+    "total_decision_rows": 991,
+    "weekly_nonzero_delta": 793,
+    "weekly_zero_delta": 177,
+    "weekly_deferred_delta": 919,
+    "illegal_requests_passing": 0,
+    "mutated_positions": 0
+  },
+  "formal_gate": {
+    "value_id": "momentum20-c07d45581ad0396e2b6382d0",
+    "status": "FACTOR_NOT_ADMITTED",
+    "formal_targets": 0
+  }
+}

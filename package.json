@@ -1,0 +1,19 @@
+{
+  "name": "ashare-institutional-quant-platform",
+  "version": "2.0.0",
+  "description": "Institutional-grade A-share Quantitative Research Platform with NautilusTrader, Tushare Lake, and QuantMind UI",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "backend:start": "python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000 --reload",
+    "frontend:dev": "npm run dev --prefix frontend",
+    "test:invariants": "python -m pytest tests/test_invariant_core.py -v",
+    "test:backend": "python -m pytest tests/test_backend_api.py -v",
+    "test:all": "python -m pytest tests/ -v",
+    "battle-test": "python scripts/run_long_horizon_battle_test.py"
+  },
+  "author": "Antigravity Quant Team",
+  "license": "Apache-2.0"
+}

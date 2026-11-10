@@ -1,0 +1,116 @@
+[
+  {
+    "file": "corporate-action-gate.json",
+    "original_sha256": "c435b5c909dab215f6bb0b81740bb928d0ac756d31eed4fa41bf7d6b254247c6",
+    "replay_sha256": "c435b5c909dab215f6bb0b81740bb928d0ac756d31eed4fa41bf7d6b254247c6",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "daily-reconciliation.csv",
+    "original_sha256": "1a96c47de3b9638e37c985c25221fc0cc316373747e74cf8e4797a95e21ef78e",
+    "replay_sha256": "1a96c47de3b9638e37c985c25221fc0cc316373747e74cf8e4797a95e21ef78e",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "fee-schedule.csv",
+    "original_sha256": "a09174e7db19ab3b38d67ceaee09e056207d8d513aac8c2ae0216f76bd57e6b3",
+    "replay_sha256": "a09174e7db19ab3b38d67ceaee09e056207d8d513aac8c2ae0216f76bd57e6b3",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "fees.csv",
+    "original_sha256": "f42ec089fa6d4a8c973ab953af4e7e12ee42c04e4323dc181c104075e25448a7",
+    "replay_sha256": "f42ec089fa6d4a8c973ab953af4e7e12ee42c04e4323dc181c104075e25448a7",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "fills.json",
+    "original_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "replay_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "industry-attribution.csv",
+    "original_sha256": "7d00d97a1ff1a9e76803122bc8c8ea4212e849bb628a36c5d5d805d0053f70e9",
+    "replay_sha256": "7d00d97a1ff1a9e76803122bc8c8ea4212e849bb628a36c5d5d805d0053f70e9",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "native-account.csv",
+    "original_sha256": "cbdb853e5aa48adf41383a37299109879dc4a9925bbba064cd0b3b20daf098cc",
+    "replay_sha256": "cbdb853e5aa48adf41383a37299109879dc4a9925bbba064cd0b3b20daf098cc",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "native-fills.csv",
+    "original_sha256": "91a4e2f100227487a802ac040b85700f03520b347fbfe4c23b7bf2d97b43d9fa",
+    "replay_sha256": "91a4e2f100227487a802ac040b85700f03520b347fbfe4c23b7bf2d97b43d9fa",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "native-orders.csv",
+    "original_sha256": "3b6328bc6c7ff1a4cb1940a28aec6a8bc6e17032a977383892ca520f9d9a7304",
+    "replay_sha256": "45fc5e3b6fe3c2233fa4c87468399a5b42655b259391f9d58aef539e7d0b15de",
+    "byte_identical": false,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": [
+      "init_id (native event UUID)"
+    ]
+  },
+  {
+    "file": "observed-bars.csv",
+    "original_sha256": "d9eca2f7dc68029c347697cb5b3712f6a16bbabb133f83d6aa4e75fbdeee22a2",
+    "replay_sha256": "d9eca2f7dc68029c347697cb5b3712f6a16bbabb133f83d6aa4e75fbdeee22a2",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "orders.json",
+    "original_sha256": "42d4f0cee8eda19b394c55132e62665f38441c9cf17d8459888579b964fde4b1",
+    "replay_sha256": "42d4f0cee8eda19b394c55132e62665f38441c9cf17d8459888579b964fde4b1",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "rejections.json",
+    "original_sha256": "8d58fb5b3ae80ebee27fdc53dd3e93a6f50f682469e66c0c1fdaa62c728e9a33",
+    "replay_sha256": "8d58fb5b3ae80ebee27fdc53dd3e93a6f50f682469e66c0c1fdaa62c728e9a33",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "strategy-gates.csv",
+    "original_sha256": "68468bc46d19b38fc16242dc0df250bfbabe1b8ddebf7e984b00279829fc1cfe",
+    "replay_sha256": "68468bc46d19b38fc16242dc0df250bfbabe1b8ddebf7e984b00279829fc1cfe",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  },
+  {
+    "file": "summary.json",
+    "original_sha256": "fb0acb149e99c6b1a5300be0435a7535c576916f3a8b8b1db1f63c0782a2440a",
+    "replay_sha256": "fb0acb149e99c6b1a5300be0435a7535c576916f3a8b8b1db1f63c0782a2440a",
+    "byte_identical": true,
+    "business_fields_equal": true,
+    "ignored_volatile_fields": []
+  }
+]

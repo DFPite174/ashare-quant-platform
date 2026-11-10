@@ -1,0 +1,131 @@
+{
+  "phase": "P1",
+  "timestamp": "2026-11-09T10:59:25.502157",
+  "status": "PASS",
+  "data_fingerprint": "4b139947ca0512a620b69652660317f757818b20c389bc14c09b5cb4357b4ded",
+  "manifest_checks": {
+    "bars_unadjusted.parquet": {
+      "matched": true,
+      "sha256": "39cbd97b4832983288f197fb9886aeaa26706e445c29172196d85733aef0e5eb"
+    },
+    "benchmark_price.parquet": {
+      "matched": true,
+      "sha256": "fe39194b231793205901253bbe754622f8b18e23ffd1037cf84b9dcb710fc3f8"
+    },
+    "benchmark_weights_monthly.parquet": {
+      "matched": true,
+      "sha256": "d5bb7067936f3b883d71bfcde32349d7aaf0a0e42f213c1e8b869bc05d3b0f18"
+    },
+    "corporate_actions.parquet": {
+      "matched": true,
+      "sha256": "20b024117a324d4007fd09bb65d2d1561659c2a6692d1c905456ec5fe6cf7edf"
+    },
+    "financial_events.parquet": {
+      "matched": true,
+      "sha256": "49d709babda207b7731823c3124f0402382773885cf700236ff69531660f7afe"
+    },
+    "industry_intervals.parquet": {
+      "matched": true,
+      "sha256": "92cebab9487b72721d835d597e188a4d13a9496cd9195a880d50261eb0baaa95"
+    },
+    "missing_bars.csv": {
+      "matched": true,
+      "sha256": "59f965ada7836e32387f7e9f0cd5c36a5a847eab908691ceb80d0116c8f42df9"
+    },
+    "security_days.parquet": {
+      "matched": true,
+      "sha256": "f8fca746382645a9f118c5649131882affa716eb0b297699cbf3a4a792211a9f"
+    },
+    "security_master.parquet": {
+      "matched": true,
+      "sha256": "d6e0caf7633e73bb8095a9cccac265b5830f310dd4be956029e6dc1a9bdea716"
+    },
+    "source_index.json": {
+      "matched": true,
+      "sha256": "b53d4cd652a70462c14870b4133e6842b9b000155986a9d68e42c6e48f7fbe95"
+    },
+    "suspension_events.parquet": {
+      "matched": true,
+      "sha256": "eeae915025f185d19c381198ab3e4398b9c060a2aee7473f6c74e9574550fde0"
+    },
+    "balancesheet.parquet": {
+      "matched": true,
+      "sha256": "7920b07eaad6561270e037813b26bfe73fa095278d4ccadde9007bdd8f03bd93"
+    },
+    "income.parquet": {
+      "matched": true,
+      "sha256": "364364e3f7fb820a569c03073ec4aac949ab05bd6d89ad101cdc87d6dfb15eee"
+    },
+    "calendar.csv": {
+      "matched": true,
+      "sha256": "93680418b81f4c9599cf0f86d9377c836a1030376e3f9cd4662dee004920560a"
+    },
+    "feature_events.csv": {
+      "matched": true,
+      "sha256": "e673f92486df5f38c05edfe3af72be424f8f8d7b1133677fb6ebfa969d890f86"
+    },
+    "market.csv": {
+      "matched": true,
+      "sha256": "1e9b1ae0dfb4d4327d5349586611b02f89840adefc8cf0e38c13ccc670e570e9"
+    },
+    "universe.csv": {
+      "matched": true,
+      "sha256": "5d4073ffca7f82390c5adc211ffe12033c47341acfc50ac89f36646746da0825"
+    }
+  },
+  "duckdb_checks": {
+    "security_day_unique": {
+      "passed": true,
+      "value": 96800
+    },
+    "security_day_total": {
+      "passed": true,
+      "value": 96800
+    },
+    "bar_unique": {
+      "passed": true,
+      "value": 85981
+    },
+    "bar_total": {
+      "passed": true,
+      "value": 85981
+    },
+    "suspensions_confirmed_by_provider": {
+      "passed": true,
+      "value": 755
+    },
+    "unclassified_eligible_missing_bars": {
+      "passed": true,
+      "value": 0
+    },
+    "prices_outside_observed_limits": {
+      "passed": true,
+      "value": 0
+    },
+    "benchmark_dates": {
+      "passed": true,
+      "value": 484
+    },
+    "benchmark_months": {
+      "passed": true,
+      "value": 25
+    },
+    "benchmark_membership_exceptions": {
+      "passed": true,
+      "value": 0
+    },
+    "income_future_or_ambiguous_usable": {
+      "passed": true,
+      "value": 0
+    },
+    "balancesheet_future_or_ambiguous_usable": {
+      "passed": true,
+      "value": 0
+    }
+  },
+  "corporate_actions": {
+    "admitted_count": 285,
+    "quarantined_count": 3,
+    "total_market_actions": 288
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "end": "2024-12-31",
+  "strict_pit": false,
+  "availability": "Later of both stated announcement dates; following session 18:00 Shanghai, assumed",
+  "tables": {
+    "income": {
+      "requests": 200,
+      "rows": 3124,
+      "securities_with_rows": 199,
+      "empty_requests": 1,
+      "usable_diagnostic_rows": 3120,
+      "conflicting_rows": 0,
+      "missing_or_out_of_window_available_at": 4
+    },
+    "balancesheet": {
+      "requests": 200,
+      "rows": 3060,
+      "securities_with_rows": 199,
+      "empty_requests": 1,
+      "usable_diagnostic_rows": 3048,
+      "conflicting_rows": 6,
+      "missing_or_out_of_window_available_at": 6
+    }
+  },
+  "sha256": {
+    "balancesheet.parquet": "7920b07eaad6561270e037813b26bfe73fa095278d4ccadde9007bdd8f03bd93",
+    "income.parquet": "364364e3f7fb820a569c03073ec4aac949ab05bd6d89ad101cdc87d6dfb15eee",
+    "source_index.json": "b53d4cd652a70462c14870b4133e6842b9b000155986a9d68e42c6e48f7fbe95"
+  }
+}

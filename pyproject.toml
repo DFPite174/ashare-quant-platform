@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ashare-quant-platform"
+version = "1.1.0"
+description = "A-Share Institutional Quantitative Research Platform with DeerFlow and NautilusTrader"
+authors = [{ name = "Quant Platform Engineering Team" }]
+license = { text = "Proprietary" }
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.0",
+    "pyarrow>=20.0.0",
+    "pandas>=2.2.0",
+    "pydantic>=2.10.0",
+    "nautilus_trader==1.231.0",
+    "tushare>=1.4.20",
+    "alphalens>=0.4.8"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0"
+]

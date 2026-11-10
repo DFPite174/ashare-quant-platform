@@ -1,0 +1,42 @@
+{
+  "causal_account_cases": 113,
+  "cli_diagnostic": "passed",
+  "cli_byte_replay": true,
+  "blocked_cases": [
+    {
+      "case": "formal-admission",
+      "exit_code": 2,
+      "reason": "FACTOR_NOT_ADMITTED"
+    },
+    {
+      "case": "forged-value",
+      "exit_code": 2,
+      "reason": "Factor identity mismatch"
+    },
+    {
+      "case": "wrong-snapshot",
+      "exit_code": 2,
+      "reason": "Snapshot mismatch"
+    },
+    {
+      "case": "open-orders",
+      "exit_code": 2,
+      "reason": "Outstanding orders, unpriced receivables and margin accounts need a different adapter"
+    },
+    {
+      "case": "wrong-clock",
+      "exit_code": 2,
+      "reason": "Account state must match the signal clock"
+    },
+    {
+      "case": "negative-cash",
+      "exit_code": 2,
+      "reason": "Invalid cash or target"
+    },
+    {
+      "case": "invalid-sellable",
+      "exit_code": 2,
+      "reason": "Invalid holdings or sellability"
+    }
+  ]
+}

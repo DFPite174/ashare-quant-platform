@@ -1,0 +1,25 @@
+{
+  "accepted_contracts": 285,
+  "blocked": [
+    {
+      "symbol": "688135.SH",
+      "ex_date": "20230615",
+      "reason": "CONFLICTING_ECONOMIC_TERMS",
+      "source_rows": 2
+    },
+    {
+      "symbol": "688311.SH",
+      "ex_date": "20230825",
+      "reason": "CONFLICTING_ECONOMIC_TERMS",
+      "source_rows": 2
+    },
+    {
+      "symbol": "688327.SH",
+      "ex_date": "20230613",
+      "reason": "INCOMPLETE_AMOUNT",
+      "source_rows": 1
+    }
+  ],
+  "applied_to_positions": 0,
+  "reason": "No held shares or fills; nonzero entitlements untested"
+}

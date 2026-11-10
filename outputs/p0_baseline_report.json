@@ -1,0 +1,62 @@
+{
+  "phase": "P0",
+  "timestamp": "2026-11-09T10:58:32.590349",
+  "status": "PASS",
+  "system": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "architecture": "64bit",
+    "executable": "C:\\Users\\SKT80\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  },
+  "dependencies": {
+    "duckdb": {
+      "installed": true,
+      "version": "1.5.5",
+      "meets_requirement": true
+    },
+    "pyarrow": {
+      "installed": true,
+      "version": "26.0.0",
+      "meets_requirement": true
+    },
+    "pandas": {
+      "installed": true,
+      "version": "2.2.3",
+      "meets_requirement": true
+    },
+    "pydantic": {
+      "installed": true,
+      "version": "2.14.1",
+      "meets_requirement": true
+    },
+    "nautilus_trader": {
+      "installed": true,
+      "version": "1.231.0",
+      "meets_requirement": true
+    },
+    "tushare": {
+      "installed": true,
+      "version": "1.4.29",
+      "meets_requirement": true
+    },
+    "alphalens": {
+      "installed": true,
+      "version": "0.4.8",
+      "meets_requirement": true
+    }
+  },
+  "pinned_commits": {
+    "ashare-factor-research": "6d883a4e7c4ec6244c04fb13d58b538181149f51",
+    "ashare-factor-agent-gpt": "d7666435011f062ab56b7c02b3644f15d7426618",
+    "ashare-nautilus-backtest-engine": "b8d424df1a7c7c65b29eaab1be667a5368c8be5c",
+    "ashare-strategy-portfolio": "cddae3f2115df38f8b1ca7fcaf581d4be3969b07",
+    "ashare-research-risk": "11d10cd556112a757b2fa9be702fb0c5bcbd4ffd"
+  },
+  "native_components": {
+    "split_native": {
+      "path": "C:\\Users\\SKT80\\Documents\\Codex\\2026-11-06\\files-mentioned-by-the-user-codex\\outputs\\P4-backtest\\upstream\\engine\\split_native.cp312-win_amd64.pyd",
+      "sha256": "d6525c469af7f157c813ceaced97ba100b3754a64a65cd3d534613936c91a24c",
+      "exists": true
+    }
+  }
+}

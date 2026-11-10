@@ -1,0 +1,45 @@
+{
+  "job_id": "f9a57dfb-4b8b-4866-8385-478a897b9bbe",
+  "study": "p2",
+  "trial_id": "b1a1f908-d326-4091-b8c7-e9c427b98006",
+  "kind": "BATCH_FACTOR_RESEARCH_NOT_ACCOUNT_RETURNS",
+  "status": "succeeded",
+  "results": [
+    {
+      "factor": "mom20",
+      "status": "succeeded",
+      "metrics": [
+        {
+          "days": 443,
+          "hac_t": -2.90993294143471,
+          "horizon": "1D",
+          "ic_mean": -0.02891748755068136,
+          "segment": "all"
+        },
+        {
+          "days": 443,
+          "hac_t": -1.8452386076178937,
+          "horizon": "20D",
+          "ic_mean": -0.05199061989390215,
+          "segment": "all"
+        },
+        {
+          "days": 443,
+          "hac_t": -2.8353154748920706,
+          "horizon": "5D",
+          "ic_mean": -0.045747752201429015,
+          "segment": "all"
+        }
+      ],
+      "coverage": {
+        "clean": 77016,
+        "eligible": 86736,
+        "factor_valid": 81772,
+        "invalid_labels": 5734,
+        "loss": 0.11206419479800778,
+        "missing_factor": 4964,
+        "quantile_failures": 0
+      }
+    }
+  ]
+}
