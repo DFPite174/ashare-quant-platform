@@ -175,6 +175,7 @@ export default function App() {
   const handleNavChange = (newTab: string) => {
     // 映射 ID 到路由路径
     const routeMap: Record<string, string> = {
+      'dashboard': '/dashboard',
       'agent': '/quantbot',
       'market-analysis': '/market-analysis',
       'ai-ide': '/ai-ide',
@@ -197,9 +198,9 @@ export default function App() {
       // 同时更新 tab 状态以保持高亮
       dispatch(setCurrentTab(newTab as any));
     } else {
-      // 如果不在主控制台路径，先回跳
-      if (location.pathname !== '/') {
-        navigate('/');
+      // 如果不在主控制台路径，先回跳到 /dashboard
+      if (location.pathname !== '/dashboard') {
+        navigate('/dashboard');
       }
       dispatch(setCurrentTab(newTab as any));
     }
@@ -647,9 +648,12 @@ export default function App() {
                     <Route path="help" element={<Suspense fallback={<RouteFallback />}><AdminHelpCenter /></Suspense>} />
                   </Route>
 
+                  {/* 根路由默认直达机构级实盘对账大屏 */}
+                  <Route path="/" element={<Navigate to="/ashare-dashboard" replace />} />
+
                   {/* 主应用路由 - 仪表盘等 */}
                   <Route
-                    path="/*"
+                    path="/dashboard"
                     element={
                       <motion.div
                         key={tab}
@@ -660,6 +664,10 @@ export default function App() {
                         <DashboardLayout modules={modules} onLayoutChange={handleLayoutChange} />
                       </motion.div>
                     }
+                  />
+                  <Route
+                    path="/*"
+                    element={<Navigate to="/ashare-dashboard" replace />}
                   />
                 </Routes>
               </Suspense>

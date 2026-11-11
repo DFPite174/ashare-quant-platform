@@ -98,12 +98,14 @@ export const AShareInstitutionalDashboard: React.FC = () => {
   const [factorReport, setFactorReport] = useState<FactorReport | null>(null);
   const [activeFactor, setActiveFactor] = useState<'composite_alpha_v1' | 'momentum20'>('composite_alpha_v1');
   const [loading, setLoading] = useState(true);
+  const [apiError, setApiError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'overview' | 'friction' | 'factors' | 'invariants'>('overview');
 
   const API_BASE = 'http://127.0.0.1:8000';
 
   const fetchData = async () => {
     setLoading(true);
+    setApiError(null);
     try {
       const [hRes, sRes, fRes] = await Promise.all([
         fetch(`${API_BASE}/api/v1/health`),
@@ -113,8 +115,12 @@ export const AShareInstitutionalDashboard: React.FC = () => {
       if (hRes.ok) setHealth(await hRes.json());
       if (sRes.ok) setSummary(await sRes.json());
       if (fRes.ok) setFactorReport(await fRes.json());
+      if (!hRes.ok || !sRes.ok) {
+        setApiError('后端接口返回异常，请确认 8000 端口后端服务已启动。');
+      }
     } catch (err) {
       console.error('Failed to connect to Quant Platform API:', err);
+      setApiError('无法连接后端 API 服务 (http://127.0.0.1:8000)。请确保在另一个终端运行: python scripts/run_server.py --port 8000');
     } finally {
       setLoading(false);
     }
@@ -125,7 +131,7 @@ export const AShareInstitutionalDashboard: React.FC = () => {
   }, [activeFactor]);
 
   return (
-    <div className="flex flex-col h-full bg-[#121316] text-[#E1E4EA] p-6 space-y-6 overflow-y-auto font-sans">
+    <div className="flex flex-col h-full bg-[#121316] text-[#E1E4EA] p-6 pb-28 space-y-6 overflow-y-auto font-sans">
       {/* 顶部标题栏与全局状态 */}
       <div className="flex items-center justify-between border-b border-[#2A2E39] pb-4">
         <div>
@@ -184,6 +190,16 @@ export const AShareInstitutionalDashboard: React.FC = () => {
           );
         })}
       </div>
+
+      {apiError && (
+        <div className="bg-[#3D1A1A] border border-[#7F2626] text-[#FCA5A5] p-4 rounded-xl flex items-center space-x-3 text-sm">
+          <AlertTriangle className="w-5 h-5 text-[#EF4444] shrink-0" />
+          <div>
+            <div className="font-semibold text-white">后端连接提示</div>
+            <div className="font-mono text-xs mt-1">{apiError}</div>
+          </div>
+        </div>
+      )}
 
       {/* 标签页内容：总览 */}
       {activeTab === 'overview' && summary && (

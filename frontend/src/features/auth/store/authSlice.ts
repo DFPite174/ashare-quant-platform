@@ -16,18 +16,27 @@ import type {
 } from '../types/auth.types';
 import { authService } from '../services/authService';
 
-// 初始状态
+// 初始状态：默认开启本地机构审计免密工作站会话（无需连接外部SaaS登录服务器）
 const initialState: AuthState & {
   loginForm: LoginFormState;
   registerForm: RegisterFormState;
 } = {
   // 认证状态
-  isAuthenticated: false,
+  isAuthenticated: true,
   isLoading: false,
-  isInitialized: false,
+  isInitialized: true,
   serverUnreachable: false,
-  user: null,
-  token: null,
+  user: {
+    id: 'local-institutional-auditor',
+    username: 'auditor',
+    email: 'auditor@ashare-quant.local',
+    full_name: '机构级量化审计员',
+    is_active: true,
+    is_admin: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  token: 'local-institutional-session',
   refreshToken: null,
   error: null,
   lastActivity: Date.now(),

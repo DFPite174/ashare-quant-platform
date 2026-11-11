@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 import App from './App';
 import store from './store';
 import { QueryProvider } from './providers/QueryProvider';
@@ -58,13 +58,27 @@ document.documentElement.classList.add('qm-rounded');
 // 启动即预加载 AI-IDE 资源（不等待路由/登录页）
 void preloadAiIdeResources();
 
+const isFileProtocol = window.location.protocol === 'file:';
+const RouterComponent = isFileProtocol ? HashRouter : BrowserRouter;
+
+if (!isFileProtocol && window.location.hash.startsWith('#/')) {
+  const hashPath = window.location.hash.slice(1);
+  if (hashPath.startsWith('/auth/')) {
+    window.history.replaceState(null, '', window.location.pathname || '/ashare-dashboard');
+  } else if (window.location.pathname === '/') {
+    window.history.replaceState(null, '', hashPath);
+  } else {
+    window.history.replaceState(null, '', window.location.pathname);
+  }
+}
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
       <QueryProvider>
-        <HashRouter>
+        <RouterComponent>
           <App />
-        </HashRouter>
+        </RouterComponent>
       </QueryProvider>
     </Provider>
   </React.StrictMode>,

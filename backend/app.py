@@ -171,7 +171,7 @@ def index_portal() -> str:
                 <div class="card-title">📊 6年实战长周期对账总结</div>
                 <div class="card-desc">2019-2024 穿透 205 万摩擦损耗的权威三方黄金对账账本。</div>
             </a>
-            <a href="/api/v1/factor/evaluation" class="card" target="_blank">
+            <a href="/api/v1/factors/evaluate?factor_id=composite_alpha_v1" class="card" target="_blank">
                 <div class="card-title">🔬 Alphalens-cn 因子评测中台</div>
                 <div class="card-desc">大模型 5 轮自愈演化后的复合因子评价报告（Rank IC +0.0676, t=6.63）。</div>
             </a>
